@@ -1,43 +1,25 @@
-\begin{tabularx}{\textwidth}{llXrrrr}
+\begin{tabularx}{\textwidth}{lXrrrr}
 \toprule
-Model & Contrast & Condition & Both & First only & Second only & Neither \\
+Model & Pipeline & Both & Zero only & Few only & Neither \\
 \midrule
-GPT-OSS-20B & zero-shot vs. few-shot & P1 & 45.12 & 13.41 & 10.98 & 30.49 \\
-\midrule
-GPT-OSS-20B & zero-shot vs. few-shot & P2 & 50.00 & 13.41 & 7.32 & 29.27 \\
-\midrule
-GPT-OSS-20B & zero-shot vs. few-shot & P3 & 53.66 & 8.54 & 13.41 & 24.39 \\
-\midrule
-DeepSeek-R1-14B & zero-shot vs. few-shot & P1 & 25.61 & 19.51 & 9.76 & 45.12 \\
-\midrule
-DeepSeek-R1-14B & zero-shot vs. few-shot & P2 & 25.61 & 9.76 & 23.17 & 41.46 \\
-\midrule
-DeepSeek-R1-14B & zero-shot vs. few-shot & P3 & 23.17 & 4.88 & 25.61 & 46.34 \\
-\midrule
-Qwen3-14B & zero-shot vs. few-shot & P1 & 34.15 & 15.85 & 8.54 & 41.46 \\
-\midrule
-Qwen3-14B & zero-shot vs. few-shot & P2 & 36.59 & 3.66 & 25.61 & 34.15 \\
-\midrule
-Qwen3-14B & zero-shot vs. few-shot & P3 & 17.07 & 3.66 & 36.59 & 42.68 \\
-\midrule
-Qwen3.5-9B & zero-shot vs. few-shot & P1 & 7.32 & 6.10 & 8.54 & 78.05 \\
-\midrule
-Qwen3.5-9B & zero-shot vs. few-shot & P2 & 20.73 & 3.66 & 18.29 & 57.32 \\
-\midrule
-Qwen3.5-9B & zero-shot vs. few-shot & P3 & 7.32 & 1.22 & 28.05 & 63.41 \\
-\midrule
-Qwen3-8B & zero-shot vs. few-shot & P1 & 30.49 & 3.66 & 7.32 & 58.54 \\
-\midrule
-Qwen3-8B & zero-shot vs. few-shot & P2 & 19.51 & 7.32 & 20.73 & 52.44 \\
-\midrule
-Qwen3-8B & zero-shot vs. few-shot & P3 & 23.17 & 3.66 & 24.39 & 48.78 \\
-\midrule
-Granite4.2-8B & zero-shot vs. few-shot & P1 & 15.85 & 4.88 & 7.32 & 71.95 \\
-\midrule
-Granite4.2-8B & zero-shot vs. few-shot & P2 & 0.00 & 0.00 & 23.17 & 76.83 \\
-\midrule
-Granite4.2-8B & zero-shot vs. few-shot & P3 & 2.44 & 0.00 & 39.02 & 58.54 \\
-\midrule
+GPT-OSS-20B & P1 & 45.12 & 13.41 & 10.98 & 30.49 \\
+GPT-OSS-20B & P2 & 50.00 & 13.41 & 7.32 & 29.27 \\
+GPT-OSS-20B & P3 & 53.66 & 8.54 & 13.41 & 24.39 \\
+DeepSeek-R1-14B & P1 & 25.61 & 19.51 & 9.76 & 45.12 \\
+DeepSeek-R1-14B & P2 & 25.61 & 9.76 & 23.17 & 41.46 \\
+DeepSeek-R1-14B & P3 & 23.17 & 4.88 & 25.61 & 46.34 \\
+Qwen3-14B & P1 & 34.15 & 15.85 & 8.54 & 41.46 \\
+Qwen3-14B & P2 & 36.59 & 3.66 & 25.61 & 34.15 \\
+Qwen3-14B & P3 & 17.07 & 3.66 & 36.59 & 42.68 \\
+Qwen3.5-9B & P1 & 7.32 & 6.10 & 8.54 & 78.05 \\
+Qwen3.5-9B & P2 & 20.73 & 3.66 & 18.29 & 57.32 \\
+Qwen3.5-9B & P3 & 7.32 & 1.22 & 28.05 & 63.41 \\
+Qwen3-8B & P1 & 30.49 & 3.66 & 7.32 & 58.54 \\
+Qwen3-8B & P2 & 19.51 & 7.32 & 20.73 & 52.44 \\
+Qwen3-8B & P3 & 23.17 & 3.66 & 24.39 & 48.78 \\
+Granite4.2-8B & P1 & 15.85 & 4.88 & 7.32 & 71.95 \\
+Granite4.2-8B & P2 & 0.00 & 0.00 & 23.17 & 76.83 \\
+Granite4.2-8B & P3 & 2.44 & 0.00 & 39.02 & 58.54 \\
 \bottomrule
 \end{tabularx}
-\par\smallskip\footnotesize First/second-only shares follow zero-shot/few-shot order. Percentages use the dataset instances as denominator. Rounding may affect row totals.
+\tablenote{First/second-only shares follow zero-shot/few-shot order. Percentages use the dataset instances as denominator. Rounding may affect row totals.}

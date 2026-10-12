@@ -171,7 +171,6 @@ def write_latex_tables(report: dict, output_dir: Path) -> None:
                 label = MODEL_NAMES[model]
                 lines.append(f'{label} & {"Zero" if shot == "zero_shot" else "Few"} & '
                              + " & ".join(values) + r" \\")
-                lines.append(r"\midrule")
         lines.extend([r"\bottomrule", r"\end{tabular}"])
         (output_dir / f"accuracy_{dataset}.tex").write_text("\n".join(lines) + "\n", encoding="utf-8")
     outcomes = Counter()
@@ -191,7 +190,6 @@ def write_latex_tables(report: dict, output_dir: Path) -> None:
             row.append(f'{100*other/384:.2f}')
             name = MODEL_NAMES[model]
             lines.append(f"{name} & {label} & " + " & ".join(row) + r" \\")
-            lines.append(r"\midrule")
     lines.extend([r"\bottomrule", r"\end{tabular}"])
     (output_dir / "failure_composition.tex").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
@@ -264,25 +262,30 @@ def write_paired_contrasts(report: dict, output_dir: Path) -> None:
              lambda r: r["contrast"] == "zero-shot vs. few-shot"),
         )
         for table_type, filename, include in table_specs:
-            lines = [
-                r"\begin{tabularx}{\textwidth}{llXrrrr}", r"\toprule",
-                r"Model & Contrast & Condition & Both & First only & Second only & Neither \\",
-                r"\midrule",
-            ]
+            if table_type == "pipeline":
+                columns = "llXrrrr"
+                heading = r"Model & Contrast & Condition & Both & First only & Second only & Neither \\"
+            else:
+                columns = "lXrrrr"
+                heading = r"Model & Pipeline & Both & Zero only & Few only & Neither \\"
+            lines = [r"\begin{tabularx}{\textwidth}{" + columns + "}",
+                     r"\toprule", heading, r"\midrule"]
             for row in rows:
                 if row["dataset"] != dataset or not include(row):
                     continue
                 condition = row["condition"].replace("zero_shot", "zero-shot").replace("few_shot", "few-shot")
+                prefix = (f"{MODEL_NAMES[row['model']]} & {row['contrast']} & {condition} & "
+                          if table_type == "pipeline" else
+                          f"{MODEL_NAMES[row['model']]} & {condition} & ")
                 lines.append(
-                    f"{MODEL_NAMES[row['model']]} & {row['contrast']} & {condition} & "
+                    prefix +
                     f"{100*row['both_correct']/row['n']:.2f} & {100*row['first_only']/row['n']:.2f} & {100*row['second_only']/row['n']:.2f} & {100*row['neither']/row['n']:.2f} \\\\")
-                lines.append(r"\midrule")
             lines.extend([r"\bottomrule", r"\end{tabularx}"])
             note = ("First/second-only shares follow the order in the contrast label. "
                     if table_type == "pipeline" else
                     "First/second-only shares follow zero-shot/few-shot order. ")
-            lines.append(r"\par\smallskip\footnotesize " + note +
-                         "Percentages use the dataset instances as denominator. Rounding may affect row totals.")
+            lines.append(r"\tablenote{" + note +
+                         "Percentages use the dataset instances as denominator. Rounding may affect row totals.}")
             (output_dir / filename).write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
