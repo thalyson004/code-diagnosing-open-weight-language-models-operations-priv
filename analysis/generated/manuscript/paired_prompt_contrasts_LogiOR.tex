@@ -1,0 +1,43 @@
+\begin{tabularx}{\textwidth}{llXrrrr}
+\toprule
+Model & Contrast & Condition & Both & First only & Second only & Neither \\
+\midrule
+GPT-OSS-20B & zero-shot vs. few-shot & P1 & 31.52 & 10.87 & 10.87 & 46.74 \\
+\midrule
+GPT-OSS-20B & zero-shot vs. few-shot & P2 & 51.09 & 2.17 & 11.96 & 34.78 \\
+\midrule
+GPT-OSS-20B & zero-shot vs. few-shot & P3 & 52.17 & 7.61 & 7.61 & 32.61 \\
+\midrule
+DeepSeek-R1-14B & zero-shot vs. few-shot & P1 & 18.48 & 7.61 & 8.70 & 65.22 \\
+\midrule
+DeepSeek-R1-14B & zero-shot vs. few-shot & P2 & 17.39 & 9.78 & 15.22 & 57.61 \\
+\midrule
+DeepSeek-R1-14B & zero-shot vs. few-shot & P3 & 13.04 & 5.43 & 13.04 & 68.48 \\
+\midrule
+Qwen3-14B & zero-shot vs. few-shot & P1 & 20.65 & 7.61 & 3.26 & 68.48 \\
+\midrule
+Qwen3-14B & zero-shot vs. few-shot & P2 & 28.26 & 8.70 & 20.65 & 42.39 \\
+\midrule
+Qwen3-14B & zero-shot vs. few-shot & P3 & 13.04 & 2.17 & 34.78 & 50.00 \\
+\midrule
+Qwen3.5-9B & zero-shot vs. few-shot & P1 & 2.17 & 3.26 & 3.26 & 91.30 \\
+\midrule
+Qwen3.5-9B & zero-shot vs. few-shot & P2 & 16.30 & 6.52 & 15.22 & 61.96 \\
+\midrule
+Qwen3.5-9B & zero-shot vs. few-shot & P3 & 5.43 & 1.09 & 33.70 & 59.78 \\
+\midrule
+Qwen3-8B & zero-shot vs. few-shot & P1 & 10.87 & 7.61 & 2.17 & 79.35 \\
+\midrule
+Qwen3-8B & zero-shot vs. few-shot & P2 & 9.78 & 2.17 & 19.57 & 68.48 \\
+\midrule
+Qwen3-8B & zero-shot vs. few-shot & P3 & 5.43 & 6.52 & 17.39 & 70.65 \\
+\midrule
+Granite4.2-8B & zero-shot vs. few-shot & P1 & 10.87 & 1.09 & 0.00 & 88.04 \\
+\midrule
+Granite4.2-8B & zero-shot vs. few-shot & P2 & 0.00 & 0.00 & 22.83 & 77.17 \\
+\midrule
+Granite4.2-8B & zero-shot vs. few-shot & P3 & 2.17 & 1.09 & 20.65 & 76.09 \\
+\midrule
+\bottomrule
+\end{tabularx}
+\par\smallskip\footnotesize First/second-only shares follow zero-shot/few-shot order. Percentages use the dataset instances as denominator. Rounding may affect row totals.

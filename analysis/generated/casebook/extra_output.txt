@@ -1,0 +1,36 @@
+CASE extra_output
+run_id: 20260917T173527918515Z
+phase: P1, repetition: 1
+model: gpt-oss:20b, dataset: ComplexOR, example_id: netasgn_0
+pipeline: formulation_code, shot_condition: few_shot
+terminal_outcome: output_contract_error
+expected_objective: 285.0
+predicted_objective: None
+EXCERPTS: [...] marks omitted material. Non-ASCII uses escape sequences, and trailing spaces are trimmed.
+[code_from_formulation]
+reasoning_field: [...] code fence. If and only if the requested solution is available and optimal, print exactly one line FINAL_OBJECTIVE=<finite numeric value>." Wait, that rule is from the examples. But the requested reported quantity is the assignment matrix and minimal total cost. The examples only printed the objective value. But the problem statement says to report the assignment matrix and mi[...]
+response: [...] assignment = [[x[(i, j)].X for j in range(len(projects))] for i in range(len(people))]
+    print(f"FINAL_OBJECTIVE={model.ObjVal:.17g}, x={assignment}")
+```
+done_reason: stop
+eval_count: 3578
+[execution]
+outcome: output_contract_error
+stdout: odel with 4 rows, 4 columns and 8 nonzeros (Min)
+Model fingerprint: 0xa57e3a55
+Model has 4 linear objective coefficients
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+01, 3e+01]
+  Bounds range     [4e+00, 7e+00]
+  RHS range        [5e+00, 1e+01]
+
+Presolve removed 4 rows and 4 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    2.8500000e+02   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  2.850000000e+02
+FINAL_OBJECTIVE=285, x=[[2.0, 6.0], [3.0, 4.0]]

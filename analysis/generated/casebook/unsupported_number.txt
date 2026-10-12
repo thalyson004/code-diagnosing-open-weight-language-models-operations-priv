@@ -1,0 +1,16 @@
+CASE unsupported_number
+run_id: 20260917T173527918515Z
+phase: P1, repetition: 1
+model: qwen3:14b, dataset: LogiOR, example_id: prob_012
+pipeline: direct, shot_condition: zero_shot
+terminal_outcome: incorrect_objective
+expected_objective: 51.78290154932
+predicted_objective: 123.45
+EXCERPTS: [...] marks omitted material. Non-ASCII uses escape sequences, and trailing spaces are trimmed.
+[direct_answer]
+reasoning_field: Okay, let's tackle this problem. So, the goal is to find the shortest total driving distance for the trucks to deliver milk to all customers, given the warehouse location, truck capacities, and customer coordinates and demands.
+
+First, I need to understand the problem structure. There are 20 customers, each with specific milk requirements. The trucks have a capacity of 25 units[...]
+response: FINAL_OBJECTIVE=123.45
+done_reason: stop
+eval_count: 3758

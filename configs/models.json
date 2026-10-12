@@ -1,0 +1,46 @@
+{
+  "models": [
+    {
+      "id": "gpt-oss:20b",
+      "provider": "ollama",
+      "size_b": 20,
+      "family": "gpt-oss",
+      "specialization": "reasoning"
+    },
+    {
+      "id": "deepseek-r1:14b",
+      "provider": "ollama",
+      "size_b": 14,
+      "family": "deepseek-r1-distill",
+      "specialization": "reasoning"
+    },
+    {
+      "id": "qwen3:14b",
+      "provider": "ollama",
+      "size_b": 14,
+      "family": "qwen3",
+      "specialization": "reasoning"
+    },
+    {
+      "id": "qwen3.5:9b",
+      "provider": "ollama",
+      "size_b": 9,
+      "family": "qwen3.5",
+      "specialization": "general"
+    },
+    {
+      "id": "qwen3:8b",
+      "provider": "ollama",
+      "size_b": 8,
+      "family": "qwen3",
+      "specialization": "reasoning"
+    },
+    {
+      "id": "ibm/granite4.2:8b",
+      "provider": "ollama",
+      "size_b": 8,
+      "family": "granite4.2",
+      "specialization": "reasoning"
+    }
+  ]
+}

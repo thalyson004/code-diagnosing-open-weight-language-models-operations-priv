@@ -1,0 +1,19 @@
+CASE 2026_granite_budget
+run_id: 20260917T173527918515Z
+phase: P1, repetition: 1
+model: ibm/granite4.2:8b, dataset: ComplexOR, example_id: multi_2
+pipeline: direct, shot_condition: zero_shot
+terminal_outcome: empty_response
+expected_objective: 235.0
+predicted_objective: None
+EXCERPTS: [...] marks omitted material. Non-ASCII uses escape sequences, and trailing spaces are trimmed.
+[direct_answer]
+reasoning_field: We need to parse the problem: It's a multi-commodity transportation problem with origins (size?), destinations (size?), products (size?). The parameters are given as dictionaries? Let's interpret.
+
+Parameters: {"supply": [[20, 30], [40, 10]], "demand": [[30, 30], [30, 10]], "limit": [[35, 25], [25, 30]], "cost": [[[2, 3], [4, 1]], [[3, 2], [2, 4]]]}
+
+We need to parse these corr[...]
+response: <empty>
+error_type: empty_response
+done_reason: length
+eval_count: 8192

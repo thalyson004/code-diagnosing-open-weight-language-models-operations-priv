@@ -1,0 +1,11 @@
+# Single-turn benchmark chat adaptation of IBM's pinned chat_template.jinja.
+# Source: ibm-granite/granite-4.2-8b, revision f8de16cdcdbc6c779ca517604e050d82cc119e44.
+# Validate under an alias first. Replace a benchmark tag only through an
+# explicit backed-up model reset with archived template provenance.
+FROM ibm/granite4.2:8b
+TEMPLATE """{{ range .Messages }}<|im_start|>{{ .Role }}
+{{ if and (eq .Role "assistant") .Thinking }}<think>{{ .Thinking }}</think>{{ end }}{{ .Content }}<|im_end|>
+{{ end }}<|im_start|>assistant
+{{ if .Think }}<think>
+{{ else }}<think></think>{{ end }}"""
+PARAMETER stop "<|im_end|>"

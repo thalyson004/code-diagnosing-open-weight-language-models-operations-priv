@@ -1,0 +1,67 @@
+CASE 2026_qwen_code
+run_id: 20260917T173527918515Z
+phase: P1, repetition: 1
+model: qwen3.5:9b, dataset: ComplexOR, example_id: diet_problem_4
+pipeline: code, shot_condition: zero_shot
+terminal_outcome: correct
+expected_objective: 10.333333333333334
+predicted_objective: 10.33
+EXCERPTS: [...] marks omitted material. Non-ASCII uses escape sequences, and trailing spaces are trimmed.
+[code_generation]
+reasoning_field: The user wants me to solve a diet problem using Gurobi. Let me break down the problem:
+
+1. **Sets:**
+   - Foods: ["Apple", "Banana"]
+   - Nutrients: ["VitaminC", "Fiber"]
+
+2. **Parameters:**
+   - Food costs: Apple = 2.0, Banana = 1.5
+   - Min food amounts: Apple = 0, Banana = 0
+   - Max food amounts: Apple = 10, Banana = 10
+   - Min nutrient amounts: VitaminC = 50, Fiber = 30
+ [...]
+response: ```python
+from gurobipy import Model, GRB
+
+# Create model
+model = Model()
+
+# Define sets
+foods = ["Apple", "Banana"]
+nutrients = ["VitaminC", "Fiber"]
+
+# Define parameters
+food_cost = {foods[0]: 2.0, foods[1]: 1.5}
+min_food_amount = {foods[0]: 0, foods[1]: 0}
+max_food_amount = {foods[0]: 10, foods[1]: 10}
+min_nutrient_amount = {nutrients[0]: 50, nutrients[1]: 30}
+max_nutrient_amount = {nutrients[0]: 100, nutrients[1]: 60}
+nutrient_amount = {
+    (nutrients[0], foods[0]): 10,
+[...]
+done_reason: stop
+eval_count: 1396
+[execution]
+outcome: executed
+stdout: ficients
+Coefficient statistics:
+  Matrix range     [5e+00, 1e+01]
+  Objective range  [2e+00, 2e+00]
+  Bounds range     [1e+01, 1e+01]
+  RHS range        [3e+01, 1e+02]
+
+Presolve removed 2 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 2 rows, 4 columns, 6 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   5.000000e+00   0.000000e+00      0s
+       2    1.0333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 2 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  1.033333333e+01
+Optimal solution found:
+  Apple: 4.67
+  Banana: 0.67
+Total cost: 10.33
+FINAL_OBJECTIVE=10.33

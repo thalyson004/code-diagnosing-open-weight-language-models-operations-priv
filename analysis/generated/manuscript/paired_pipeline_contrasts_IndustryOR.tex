@@ -1,0 +1,55 @@
+\begin{tabularx}{\textwidth}{llXrrrr}
+\toprule
+Model & Contrast & Condition & Both & First only & Second only & Neither \\
+\midrule
+GPT-OSS-20B & P1 vs. P2 & zero-shot & 51.22 & 7.32 & 12.20 & 29.27 \\
+\midrule
+GPT-OSS-20B & P1 vs. P2 & few-shot & 41.46 & 14.63 & 15.85 & 28.05 \\
+\midrule
+DeepSeek-R1-14B & P1 vs. P2 & zero-shot & 25.61 & 19.51 & 9.76 & 45.12 \\
+\midrule
+DeepSeek-R1-14B & P1 vs. P2 & few-shot & 24.39 & 10.98 & 24.39 & 40.24 \\
+\midrule
+Qwen3-14B & P1 vs. P2 & zero-shot & 25.61 & 24.39 & 14.63 & 35.37 \\
+\midrule
+Qwen3-14B & P1 vs. P2 & few-shot & 31.71 & 10.98 & 30.49 & 26.83 \\
+\midrule
+Qwen3.5-9B & P1 vs. P2 & zero-shot & 7.32 & 6.10 & 17.07 & 69.51 \\
+\midrule
+Qwen3.5-9B & P1 vs. P2 & few-shot & 9.76 & 6.10 & 29.27 & 54.88 \\
+\midrule
+Qwen3-8B & P1 vs. P2 & zero-shot & 15.85 & 18.29 & 10.98 & 54.88 \\
+\midrule
+Qwen3-8B & P1 vs. P2 & few-shot & 24.39 & 13.41 & 15.85 & 46.34 \\
+\midrule
+Granite4.2-8B & P1 vs. P2 & zero-shot & 0.00 & 20.73 & 0.00 & 79.27 \\
+\midrule
+Granite4.2-8B & P1 vs. P2 & few-shot & 7.32 & 15.85 & 15.85 & 60.98 \\
+\midrule
+GPT-OSS-20B & P2 vs. P3 & zero-shot & 53.66 & 9.76 & 8.54 & 28.05 \\
+\midrule
+GPT-OSS-20B & P2 vs. P3 & few-shot & 51.22 & 6.10 & 15.85 & 26.83 \\
+\midrule
+DeepSeek-R1-14B & P2 vs. P3 & zero-shot & 18.29 & 17.07 & 9.76 & 54.88 \\
+\midrule
+DeepSeek-R1-14B & P2 vs. P3 & few-shot & 36.59 & 12.20 & 12.20 & 39.02 \\
+\midrule
+Qwen3-14B & P2 vs. P3 & zero-shot & 9.76 & 30.49 & 10.98 & 48.78 \\
+\midrule
+Qwen3-14B & P2 vs. P3 & few-shot & 47.56 & 14.63 & 6.10 & 31.71 \\
+\midrule
+Qwen3.5-9B & P2 vs. P3 & zero-shot & 2.44 & 21.95 & 6.10 & 69.51 \\
+\midrule
+Qwen3.5-9B & P2 vs. P3 & few-shot & 23.17 & 15.85 & 12.20 & 48.78 \\
+\midrule
+Qwen3-8B & P2 vs. P3 & zero-shot & 12.20 & 14.63 & 14.63 & 58.54 \\
+\midrule
+Qwen3-8B & P2 vs. P3 & few-shot & 30.49 & 9.76 & 17.07 & 42.68 \\
+\midrule
+Granite4.2-8B & P2 vs. P3 & zero-shot & 0.00 & 0.00 & 2.44 & 97.56 \\
+\midrule
+Granite4.2-8B & P2 vs. P3 & few-shot & 20.73 & 2.44 & 20.73 & 56.10 \\
+\midrule
+\bottomrule
+\end{tabularx}
+\par\smallskip\footnotesize First/second-only shares follow the order in the contrast label. Percentages use the dataset instances as denominator. Rounding may affect row totals.

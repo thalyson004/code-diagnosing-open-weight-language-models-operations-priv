@@ -1,0 +1,3374 @@
+{
+  "selected_records_sha256": "5e4219b1fdccc62506b7eccd76c4012b9060798fc14718182049e277e9715dc2",
+  "selected_models": [
+    "gpt-oss:20b",
+    "deepseek-r1:14b",
+    "qwen3:14b",
+    "qwen3.5:9b",
+    "qwen3:8b",
+    "ibm/granite4.2:8b"
+  ],
+  "selected_observations": 6912,
+  "classification_version": "uniform-failure-labels-v1",
+  "objective_scores_changed": 0,
+  "reclassified": 2733,
+  "cells": [
+    {
+      "model": "deepseek-r1:14b",
+      "dataset": "ComplexOR",
+      "pipeline": "code",
+      "shot_condition": "few_shot",
+      "n": 18,
+      "correct": 10,
+      "outcomes": {
+        "correct": 10,
+        "incorrect_objective": 1,
+        "output_contract_error": 1,
+        "runtime_error": 5,
+        "truncated_response": 1
+      },
+      "thinking_available": 18
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "dataset": "ComplexOR",
+      "pipeline": "code",
+      "shot_condition": "zero_shot",
+      "n": 18,
+      "correct": 6,
+      "outcomes": {
+        "correct": 6,
+        "incorrect_objective": 2,
+        "runtime_error": 10
+      },
+      "thinking_available": 18
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "dataset": "ComplexOR",
+      "pipeline": "direct",
+      "shot_condition": "few_shot",
+      "n": 18,
+      "correct": 15,
+      "outcomes": {
+        "correct": 15,
+        "incorrect_objective": 2,
+        "parse_error": 1
+      },
+      "thinking_available": 18
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "dataset": "ComplexOR",
+      "pipeline": "direct",
+      "shot_condition": "zero_shot",
+      "n": 18,
+      "correct": 13,
+      "outcomes": {
+        "correct": 13,
+        "incorrect_objective": 5
+      },
+      "thinking_available": 18
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "dataset": "ComplexOR",
+      "pipeline": "formulation_code",
+      "shot_condition": "few_shot",
+      "n": 18,
+      "correct": 10,
+      "outcomes": {
+        "compilation_error": 1,
+        "correct": 10,
+        "incorrect_objective": 2,
+        "runtime_error": 3,
+        "truncated_response": 2
+      },
+      "thinking_available": 18
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "dataset": "ComplexOR",
+      "pipeline": "formulation_code",
+      "shot_condition": "zero_shot",
+      "n": 18,
+      "correct": 6,
+      "outcomes": {
+        "correct": 6,
+        "incorrect_objective": 4,
+        "output_contract_error": 2,
+        "runtime_error": 6
+      },
+      "thinking_available": 18
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "dataset": "IndustryOR",
+      "pipeline": "code",
+      "shot_condition": "few_shot",
+      "n": 82,
+      "correct": 40,
+      "outcomes": {
+        "correct": 40,
+        "incorrect_objective": 15,
+        "output_contract_error": 4,
+        "request_timeout": 1,
+        "runtime_error": 11,
+        "truncated_response": 11
+      },
+      "thinking_available": 79
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "dataset": "IndustryOR",
+      "pipeline": "code",
+      "shot_condition": "zero_shot",
+      "n": 82,
+      "correct": 29,
+      "outcomes": {
+        "compilation_error": 4,
+        "correct": 29,
+        "incorrect_objective": 19,
+        "invalid_response": 1,
+        "output_contract_error": 1,
+        "runtime_error": 19,
+        "truncated_response": 9
+      },
+      "thinking_available": 82
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "dataset": "IndustryOR",
+      "pipeline": "direct",
+      "shot_condition": "few_shot",
+      "n": 82,
+      "correct": 29,
+      "outcomes": {
+        "correct": 29,
+        "incorrect_objective": 20,
+        "parse_error": 3,
+        "request_timeout": 1,
+        "truncated_response": 29
+      },
+      "thinking_available": 81
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "dataset": "IndustryOR",
+      "pipeline": "direct",
+      "shot_condition": "zero_shot",
+      "n": 82,
+      "correct": 37,
+      "outcomes": {
+        "correct": 37,
+        "incorrect_objective": 20,
+        "parse_error": 3,
+        "truncated_response": 22
+      },
+      "thinking_available": 82
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "dataset": "IndustryOR",
+      "pipeline": "formulation_code",
+      "shot_condition": "few_shot",
+      "n": 82,
+      "correct": 40,
+      "outcomes": {
+        "compilation_error": 2,
+        "correct": 40,
+        "incorrect_objective": 14,
+        "output_contract_error": 4,
+        "runtime_error": 17,
+        "truncated_response": 5
+      },
+      "thinking_available": 82
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "dataset": "IndustryOR",
+      "pipeline": "formulation_code",
+      "shot_condition": "zero_shot",
+      "n": 82,
+      "correct": 23,
+      "outcomes": {
+        "correct": 23,
+        "incorrect_objective": 13,
+        "invalid_response": 1,
+        "output_contract_error": 8,
+        "runtime_error": 34,
+        "truncated_response": 3
+      },
+      "thinking_available": 82
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "dataset": "LogiOR",
+      "pipeline": "code",
+      "shot_condition": "few_shot",
+      "n": 92,
+      "correct": 30,
+      "outcomes": {
+        "compilation_error": 3,
+        "correct": 30,
+        "incorrect_objective": 14,
+        "output_contract_error": 3,
+        "runtime_error": 22,
+        "truncated_response": 20
+      },
+      "thinking_available": 92
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "dataset": "LogiOR",
+      "pipeline": "code",
+      "shot_condition": "zero_shot",
+      "n": 92,
+      "correct": 25,
+      "outcomes": {
+        "compilation_error": 3,
+        "correct": 25,
+        "incorrect_objective": 13,
+        "invalid_response": 1,
+        "output_contract_error": 3,
+        "runtime_error": 35,
+        "truncated_response": 12
+      },
+      "thinking_available": 92
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "dataset": "LogiOR",
+      "pipeline": "direct",
+      "shot_condition": "few_shot",
+      "n": 92,
+      "correct": 25,
+      "outcomes": {
+        "correct": 25,
+        "incorrect_objective": 23,
+        "parse_error": 1,
+        "truncated_response": 43
+      },
+      "thinking_available": 92
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "dataset": "LogiOR",
+      "pipeline": "direct",
+      "shot_condition": "zero_shot",
+      "n": 92,
+      "correct": 24,
+      "outcomes": {
+        "correct": 24,
+        "incorrect_objective": 30,
+        "parse_error": 4,
+        "truncated_response": 34
+      },
+      "thinking_available": 92
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "dataset": "LogiOR",
+      "pipeline": "formulation_code",
+      "shot_condition": "few_shot",
+      "n": 92,
+      "correct": 24,
+      "outcomes": {
+        "correct": 24,
+        "empty_response": 1,
+        "incorrect_objective": 19,
+        "output_contract_error": 2,
+        "runtime_error": 34,
+        "truncated_response": 12
+      },
+      "thinking_available": 92
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "dataset": "LogiOR",
+      "pipeline": "formulation_code",
+      "shot_condition": "zero_shot",
+      "n": 92,
+      "correct": 17,
+      "outcomes": {
+        "compilation_error": 4,
+        "correct": 17,
+        "incorrect_objective": 10,
+        "invalid_response": 1,
+        "output_contract_error": 9,
+        "runtime_error": 45,
+        "truncated_response": 6
+      },
+      "thinking_available": 92
+    },
+    {
+      "model": "gpt-oss:20b",
+      "dataset": "ComplexOR",
+      "pipeline": "code",
+      "shot_condition": "few_shot",
+      "n": 18,
+      "correct": 14,
+      "outcomes": {
+        "correct": 14,
+        "incorrect_objective": 2,
+        "runtime_error": 1,
+        "truncated_response": 1
+      },
+      "thinking_available": 18
+    },
+    {
+      "model": "gpt-oss:20b",
+      "dataset": "ComplexOR",
+      "pipeline": "code",
+      "shot_condition": "zero_shot",
+      "n": 18,
+      "correct": 14,
+      "outcomes": {
+        "correct": 14,
+        "incorrect_objective": 2,
+        "runtime_error": 2
+      },
+      "thinking_available": 18
+    },
+    {
+      "model": "gpt-oss:20b",
+      "dataset": "ComplexOR",
+      "pipeline": "direct",
+      "shot_condition": "few_shot",
+      "n": 18,
+      "correct": 16,
+      "outcomes": {
+        "correct": 16,
+        "incorrect_objective": 2
+      },
+      "thinking_available": 18
+    },
+    {
+      "model": "gpt-oss:20b",
+      "dataset": "ComplexOR",
+      "pipeline": "direct",
+      "shot_condition": "zero_shot",
+      "n": 18,
+      "correct": 15,
+      "outcomes": {
+        "correct": 15,
+        "incorrect_objective": 3
+      },
+      "thinking_available": 18
+    },
+    {
+      "model": "gpt-oss:20b",
+      "dataset": "ComplexOR",
+      "pipeline": "formulation_code",
+      "shot_condition": "few_shot",
+      "n": 18,
+      "correct": 13,
+      "outcomes": {
+        "correct": 13,
+        "incorrect_objective": 2,
+        "output_contract_error": 2,
+        "runtime_error": 1
+      },
+      "thinking_available": 18
+    },
+    {
+      "model": "gpt-oss:20b",
+      "dataset": "ComplexOR",
+      "pipeline": "formulation_code",
+      "shot_condition": "zero_shot",
+      "n": 18,
+      "correct": 13,
+      "outcomes": {
+        "correct": 13,
+        "incorrect_objective": 3,
+        "output_contract_error": 1,
+        "runtime_error": 1
+      },
+      "thinking_available": 18
+    },
+    {
+      "model": "gpt-oss:20b",
+      "dataset": "IndustryOR",
+      "pipeline": "code",
+      "shot_condition": "few_shot",
+      "n": 82,
+      "correct": 47,
+      "outcomes": {
+        "correct": 47,
+        "incorrect_objective": 22,
+        "output_contract_error": 8,
+        "runtime_error": 1,
+        "truncated_response": 4
+      },
+      "thinking_available": 82
+    },
+    {
+      "model": "gpt-oss:20b",
+      "dataset": "IndustryOR",
+      "pipeline": "code",
+      "shot_condition": "zero_shot",
+      "n": 82,
+      "correct": 52,
+      "outcomes": {
+        "correct": 52,
+        "incorrect_objective": 18,
+        "output_contract_error": 4,
+        "runtime_error": 2,
+        "truncated_response": 6
+      },
+      "thinking_available": 82
+    },
+    {
+      "model": "gpt-oss:20b",
+      "dataset": "IndustryOR",
+      "pipeline": "direct",
+      "shot_condition": "few_shot",
+      "n": 82,
+      "correct": 46,
+      "outcomes": {
+        "correct": 46,
+        "incorrect_objective": 14,
+        "parse_error": 1,
+        "truncated_response": 21
+      },
+      "thinking_available": 82
+    },
+    {
+      "model": "gpt-oss:20b",
+      "dataset": "IndustryOR",
+      "pipeline": "direct",
+      "shot_condition": "zero_shot",
+      "n": 82,
+      "correct": 48,
+      "outcomes": {
+        "correct": 48,
+        "incorrect_objective": 18,
+        "truncated_response": 16
+      },
+      "thinking_available": 82
+    },
+    {
+      "model": "gpt-oss:20b",
+      "dataset": "IndustryOR",
+      "pipeline": "formulation_code",
+      "shot_condition": "few_shot",
+      "n": 82,
+      "correct": 55,
+      "outcomes": {
+        "correct": 55,
+        "incorrect_objective": 15,
+        "output_contract_error": 6,
+        "runtime_error": 1,
+        "truncated_response": 5
+      },
+      "thinking_available": 82
+    },
+    {
+      "model": "gpt-oss:20b",
+      "dataset": "IndustryOR",
+      "pipeline": "formulation_code",
+      "shot_condition": "zero_shot",
+      "n": 82,
+      "correct": 51,
+      "outcomes": {
+        "correct": 51,
+        "incorrect_objective": 19,
+        "output_contract_error": 6,
+        "runtime_error": 3,
+        "truncated_response": 3
+      },
+      "thinking_available": 82
+    },
+    {
+      "model": "gpt-oss:20b",
+      "dataset": "LogiOR",
+      "pipeline": "code",
+      "shot_condition": "few_shot",
+      "n": 92,
+      "correct": 58,
+      "outcomes": {
+        "correct": 58,
+        "incorrect_objective": 11,
+        "output_contract_error": 5,
+        "runtime_error": 4,
+        "timeout": 1,
+        "truncated_response": 13
+      },
+      "thinking_available": 92
+    },
+    {
+      "model": "gpt-oss:20b",
+      "dataset": "LogiOR",
+      "pipeline": "code",
+      "shot_condition": "zero_shot",
+      "n": 92,
+      "correct": 49,
+      "outcomes": {
+        "correct": 49,
+        "incorrect_objective": 13,
+        "output_contract_error": 3,
+        "runtime_error": 8,
+        "timeout": 3,
+        "truncated_response": 16
+      },
+      "thinking_available": 92
+    },
+    {
+      "model": "gpt-oss:20b",
+      "dataset": "LogiOR",
+      "pipeline": "direct",
+      "shot_condition": "few_shot",
+      "n": 92,
+      "correct": 39,
+      "outcomes": {
+        "correct": 39,
+        "incorrect_objective": 12,
+        "truncated_response": 41
+      },
+      "thinking_available": 92
+    },
+    {
+      "model": "gpt-oss:20b",
+      "dataset": "LogiOR",
+      "pipeline": "direct",
+      "shot_condition": "zero_shot",
+      "n": 92,
+      "correct": 39,
+      "outcomes": {
+        "correct": 39,
+        "incorrect_objective": 14,
+        "truncated_response": 39
+      },
+      "thinking_available": 92
+    },
+    {
+      "model": "gpt-oss:20b",
+      "dataset": "LogiOR",
+      "pipeline": "formulation_code",
+      "shot_condition": "few_shot",
+      "n": 92,
+      "correct": 55,
+      "outcomes": {
+        "correct": 55,
+        "incorrect_objective": 13,
+        "output_contract_error": 12,
+        "runtime_error": 3,
+        "timeout": 1,
+        "truncated_response": 8
+      },
+      "thinking_available": 92
+    },
+    {
+      "model": "gpt-oss:20b",
+      "dataset": "LogiOR",
+      "pipeline": "formulation_code",
+      "shot_condition": "zero_shot",
+      "n": 92,
+      "correct": 55,
+      "outcomes": {
+        "correct": 55,
+        "incorrect_objective": 14,
+        "output_contract_error": 9,
+        "runtime_error": 6,
+        "timeout": 1,
+        "truncated_response": 7
+      },
+      "thinking_available": 92
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "dataset": "ComplexOR",
+      "pipeline": "code",
+      "shot_condition": "few_shot",
+      "n": 18,
+      "correct": 12,
+      "outcomes": {
+        "correct": 12,
+        "incorrect_objective": 2,
+        "truncated_response": 4
+      },
+      "thinking_available": 18
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "dataset": "ComplexOR",
+      "pipeline": "code",
+      "shot_condition": "zero_shot",
+      "n": 18,
+      "correct": 1,
+      "outcomes": {
+        "correct": 1,
+        "output_contract_error": 1,
+        "runtime_error": 5,
+        "truncated_response": 11
+      },
+      "thinking_available": 18
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "dataset": "ComplexOR",
+      "pipeline": "direct",
+      "shot_condition": "few_shot",
+      "n": 18,
+      "correct": 11,
+      "outcomes": {
+        "correct": 11,
+        "incorrect_objective": 1,
+        "truncated_response": 6
+      },
+      "thinking_available": 18
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "dataset": "ComplexOR",
+      "pipeline": "direct",
+      "shot_condition": "zero_shot",
+      "n": 18,
+      "correct": 11,
+      "outcomes": {
+        "correct": 11,
+        "incorrect_objective": 2,
+        "truncated_response": 5
+      },
+      "thinking_available": 18
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "dataset": "ComplexOR",
+      "pipeline": "formulation_code",
+      "shot_condition": "few_shot",
+      "n": 18,
+      "correct": 11,
+      "outcomes": {
+        "correct": 11,
+        "incorrect_objective": 2,
+        "truncated_response": 5
+      },
+      "thinking_available": 18
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "dataset": "ComplexOR",
+      "pipeline": "formulation_code",
+      "shot_condition": "zero_shot",
+      "n": 18,
+      "correct": 2,
+      "outcomes": {
+        "correct": 2,
+        "output_contract_error": 1,
+        "runtime_error": 9,
+        "truncated_response": 6
+      },
+      "thinking_available": 18
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "dataset": "IndustryOR",
+      "pipeline": "code",
+      "shot_condition": "few_shot",
+      "n": 82,
+      "correct": 19,
+      "outcomes": {
+        "correct": 19,
+        "runtime_error": 2,
+        "truncated_response": 61
+      },
+      "thinking_available": 82
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "dataset": "IndustryOR",
+      "pipeline": "code",
+      "shot_condition": "zero_shot",
+      "n": 82,
+      "correct": 0,
+      "outcomes": {
+        "blocked_import": 1,
+        "output_contract_error": 3,
+        "runtime_error": 8,
+        "truncated_response": 70
+      },
+      "thinking_available": 82
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "dataset": "IndustryOR",
+      "pipeline": "direct",
+      "shot_condition": "few_shot",
+      "n": 82,
+      "correct": 19,
+      "outcomes": {
+        "correct": 19,
+        "truncated_response": 63
+      },
+      "thinking_available": 82
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "dataset": "IndustryOR",
+      "pipeline": "direct",
+      "shot_condition": "zero_shot",
+      "n": 82,
+      "correct": 17,
+      "outcomes": {
+        "correct": 17,
+        "incorrect_objective": 2,
+        "truncated_response": 63
+      },
+      "thinking_available": 82
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "dataset": "IndustryOR",
+      "pipeline": "formulation_code",
+      "shot_condition": "few_shot",
+      "n": 82,
+      "correct": 34,
+      "outcomes": {
+        "correct": 34,
+        "incorrect_objective": 2,
+        "output_contract_error": 2,
+        "truncated_response": 44
+      },
+      "thinking_available": 82
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "dataset": "IndustryOR",
+      "pipeline": "formulation_code",
+      "shot_condition": "zero_shot",
+      "n": 82,
+      "correct": 2,
+      "outcomes": {
+        "correct": 2,
+        "output_contract_error": 1,
+        "runtime_error": 15,
+        "truncated_response": 64
+      },
+      "thinking_available": 82
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "dataset": "LogiOR",
+      "pipeline": "code",
+      "shot_condition": "few_shot",
+      "n": 92,
+      "correct": 21,
+      "outcomes": {
+        "correct": 21,
+        "incorrect_objective": 1,
+        "runtime_error": 1,
+        "truncated_response": 69
+      },
+      "thinking_available": 92
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "dataset": "LogiOR",
+      "pipeline": "code",
+      "shot_condition": "zero_shot",
+      "n": 92,
+      "correct": 0,
+      "outcomes": {
+        "runtime_error": 6,
+        "truncated_response": 86
+      },
+      "thinking_available": 92
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "dataset": "LogiOR",
+      "pipeline": "direct",
+      "shot_condition": "few_shot",
+      "n": 92,
+      "correct": 10,
+      "outcomes": {
+        "correct": 10,
+        "incorrect_objective": 1,
+        "truncated_response": 81
+      },
+      "thinking_available": 92
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "dataset": "LogiOR",
+      "pipeline": "direct",
+      "shot_condition": "zero_shot",
+      "n": 92,
+      "correct": 11,
+      "outcomes": {
+        "correct": 11,
+        "incorrect_objective": 1,
+        "truncated_response": 80
+      },
+      "thinking_available": 92
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "dataset": "LogiOR",
+      "pipeline": "formulation_code",
+      "shot_condition": "few_shot",
+      "n": 92,
+      "correct": 21,
+      "outcomes": {
+        "correct": 21,
+        "runtime_error": 1,
+        "truncated_response": 70
+      },
+      "thinking_available": 92
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "dataset": "LogiOR",
+      "pipeline": "formulation_code",
+      "shot_condition": "zero_shot",
+      "n": 92,
+      "correct": 3,
+      "outcomes": {
+        "correct": 3,
+        "output_contract_error": 2,
+        "runtime_error": 9,
+        "truncated_response": 78
+      },
+      "thinking_available": 92
+    },
+    {
+      "model": "qwen3.5:9b",
+      "dataset": "ComplexOR",
+      "pipeline": "code",
+      "shot_condition": "few_shot",
+      "n": 18,
+      "correct": 7,
+      "outcomes": {
+        "correct": 7,
+        "incorrect_objective": 4,
+        "output_contract_error": 1,
+        "runtime_error": 4,
+        "truncated_response": 2
+      },
+      "thinking_available": 18
+    },
+    {
+      "model": "qwen3.5:9b",
+      "dataset": "ComplexOR",
+      "pipeline": "code",
+      "shot_condition": "zero_shot",
+      "n": 18,
+      "correct": 4,
+      "outcomes": {
+        "correct": 4,
+        "output_contract_error": 2,
+        "runtime_error": 11,
+        "truncated_response": 1
+      },
+      "thinking_available": 18
+    },
+    {
+      "model": "qwen3.5:9b",
+      "dataset": "ComplexOR",
+      "pipeline": "direct",
+      "shot_condition": "few_shot",
+      "n": 18,
+      "correct": 8,
+      "outcomes": {
+        "correct": 8,
+        "truncated_response": 10
+      },
+      "thinking_available": 18
+    },
+    {
+      "model": "qwen3.5:9b",
+      "dataset": "ComplexOR",
+      "pipeline": "direct",
+      "shot_condition": "zero_shot",
+      "n": 18,
+      "correct": 9,
+      "outcomes": {
+        "correct": 9,
+        "incorrect_objective": 1,
+        "truncated_response": 8
+      },
+      "thinking_available": 18
+    },
+    {
+      "model": "qwen3.5:9b",
+      "dataset": "ComplexOR",
+      "pipeline": "formulation_code",
+      "shot_condition": "few_shot",
+      "n": 18,
+      "correct": 10,
+      "outcomes": {
+        "correct": 10,
+        "incorrect_objective": 1,
+        "runtime_error": 2,
+        "truncated_response": 5
+      },
+      "thinking_available": 18
+    },
+    {
+      "model": "qwen3.5:9b",
+      "dataset": "ComplexOR",
+      "pipeline": "formulation_code",
+      "shot_condition": "zero_shot",
+      "n": 18,
+      "correct": 3,
+      "outcomes": {
+        "correct": 3,
+        "runtime_error": 2,
+        "truncated_response": 13
+      },
+      "thinking_available": 18
+    },
+    {
+      "model": "qwen3.5:9b",
+      "dataset": "IndustryOR",
+      "pipeline": "code",
+      "shot_condition": "few_shot",
+      "n": 82,
+      "correct": 32,
+      "outcomes": {
+        "correct": 32,
+        "incorrect_objective": 4,
+        "output_contract_error": 4,
+        "runtime_error": 5,
+        "truncated_response": 37
+      },
+      "thinking_available": 82
+    },
+    {
+      "model": "qwen3.5:9b",
+      "dataset": "IndustryOR",
+      "pipeline": "code",
+      "shot_condition": "zero_shot",
+      "n": 82,
+      "correct": 20,
+      "outcomes": {
+        "compilation_error": 1,
+        "correct": 20,
+        "incorrect_objective": 5,
+        "output_contract_error": 5,
+        "runtime_error": 17,
+        "truncated_response": 34
+      },
+      "thinking_available": 82
+    },
+    {
+      "model": "qwen3.5:9b",
+      "dataset": "IndustryOR",
+      "pipeline": "direct",
+      "shot_condition": "few_shot",
+      "n": 82,
+      "correct": 13,
+      "outcomes": {
+        "correct": 13,
+        "truncated_response": 69
+      },
+      "thinking_available": 82
+    },
+    {
+      "model": "qwen3.5:9b",
+      "dataset": "IndustryOR",
+      "pipeline": "direct",
+      "shot_condition": "zero_shot",
+      "n": 82,
+      "correct": 11,
+      "outcomes": {
+        "correct": 11,
+        "truncated_response": 71
+      },
+      "thinking_available": 82
+    },
+    {
+      "model": "qwen3.5:9b",
+      "dataset": "IndustryOR",
+      "pipeline": "formulation_code",
+      "shot_condition": "few_shot",
+      "n": 82,
+      "correct": 29,
+      "outcomes": {
+        "correct": 29,
+        "incorrect_objective": 2,
+        "output_contract_error": 2,
+        "truncated_response": 49
+      },
+      "thinking_available": 82
+    },
+    {
+      "model": "qwen3.5:9b",
+      "dataset": "IndustryOR",
+      "pipeline": "formulation_code",
+      "shot_condition": "zero_shot",
+      "n": 82,
+      "correct": 7,
+      "outcomes": {
+        "correct": 7,
+        "empty_response": 1,
+        "output_contract_error": 1,
+        "runtime_error": 1,
+        "truncated_response": 72
+      },
+      "thinking_available": 82
+    },
+    {
+      "model": "qwen3.5:9b",
+      "dataset": "LogiOR",
+      "pipeline": "code",
+      "shot_condition": "few_shot",
+      "n": 92,
+      "correct": 29,
+      "outcomes": {
+        "compilation_error": 1,
+        "correct": 29,
+        "incorrect_objective": 10,
+        "output_contract_error": 5,
+        "runtime_error": 17,
+        "truncated_response": 30
+      },
+      "thinking_available": 92
+    },
+    {
+      "model": "qwen3.5:9b",
+      "dataset": "LogiOR",
+      "pipeline": "code",
+      "shot_condition": "zero_shot",
+      "n": 92,
+      "correct": 21,
+      "outcomes": {
+        "compilation_error": 2,
+        "correct": 21,
+        "incorrect_objective": 3,
+        "output_contract_error": 11,
+        "runtime_error": 24,
+        "truncated_response": 31
+      },
+      "thinking_available": 92
+    },
+    {
+      "model": "qwen3.5:9b",
+      "dataset": "LogiOR",
+      "pipeline": "direct",
+      "shot_condition": "few_shot",
+      "n": 92,
+      "correct": 5,
+      "outcomes": {
+        "correct": 5,
+        "truncated_response": 87
+      },
+      "thinking_available": 92
+    },
+    {
+      "model": "qwen3.5:9b",
+      "dataset": "LogiOR",
+      "pipeline": "direct",
+      "shot_condition": "zero_shot",
+      "n": 92,
+      "correct": 5,
+      "outcomes": {
+        "correct": 5,
+        "incorrect_objective": 1,
+        "truncated_response": 86
+      },
+      "thinking_available": 92
+    },
+    {
+      "model": "qwen3.5:9b",
+      "dataset": "LogiOR",
+      "pipeline": "formulation_code",
+      "shot_condition": "few_shot",
+      "n": 92,
+      "correct": 36,
+      "outcomes": {
+        "correct": 36,
+        "incorrect_objective": 2,
+        "output_contract_error": 2,
+        "runtime_error": 2,
+        "truncated_response": 50
+      },
+      "thinking_available": 92
+    },
+    {
+      "model": "qwen3.5:9b",
+      "dataset": "LogiOR",
+      "pipeline": "formulation_code",
+      "shot_condition": "zero_shot",
+      "n": 92,
+      "correct": 6,
+      "outcomes": {
+        "correct": 6,
+        "incorrect_objective": 1,
+        "output_contract_error": 1,
+        "runtime_error": 1,
+        "truncated_response": 83
+      },
+      "thinking_available": 92
+    },
+    {
+      "model": "qwen3:14b",
+      "dataset": "ComplexOR",
+      "pipeline": "code",
+      "shot_condition": "few_shot",
+      "n": 18,
+      "correct": 11,
+      "outcomes": {
+        "correct": 11,
+        "incorrect_objective": 4,
+        "runtime_error": 1,
+        "truncated_response": 2
+      },
+      "thinking_available": 18
+    },
+    {
+      "model": "qwen3:14b",
+      "dataset": "ComplexOR",
+      "pipeline": "code",
+      "shot_condition": "zero_shot",
+      "n": 18,
+      "correct": 8,
+      "outcomes": {
+        "correct": 8,
+        "incorrect_objective": 3,
+        "output_contract_error": 5,
+        "runtime_error": 1,
+        "truncated_response": 1
+      },
+      "thinking_available": 18
+    },
+    {
+      "model": "qwen3:14b",
+      "dataset": "ComplexOR",
+      "pipeline": "direct",
+      "shot_condition": "few_shot",
+      "n": 18,
+      "correct": 13,
+      "outcomes": {
+        "correct": 13,
+        "incorrect_objective": 5
+      },
+      "thinking_available": 18
+    },
+    {
+      "model": "qwen3:14b",
+      "dataset": "ComplexOR",
+      "pipeline": "direct",
+      "shot_condition": "zero_shot",
+      "n": 18,
+      "correct": 14,
+      "outcomes": {
+        "correct": 14,
+        "incorrect_objective": 3,
+        "truncated_response": 1
+      },
+      "thinking_available": 18
+    },
+    {
+      "model": "qwen3:14b",
+      "dataset": "ComplexOR",
+      "pipeline": "formulation_code",
+      "shot_condition": "few_shot",
+      "n": 18,
+      "correct": 9,
+      "outcomes": {
+        "correct": 9,
+        "incorrect_objective": 3,
+        "runtime_error": 1,
+        "truncated_response": 5
+      },
+      "thinking_available": 18
+    },
+    {
+      "model": "qwen3:14b",
+      "dataset": "ComplexOR",
+      "pipeline": "formulation_code",
+      "shot_condition": "zero_shot",
+      "n": 18,
+      "correct": 4,
+      "outcomes": {
+        "correct": 4,
+        "incorrect_objective": 1,
+        "output_contract_error": 10,
+        "truncated_response": 3
+      },
+      "thinking_available": 18
+    },
+    {
+      "model": "qwen3:14b",
+      "dataset": "IndustryOR",
+      "pipeline": "code",
+      "shot_condition": "few_shot",
+      "n": 82,
+      "correct": 51,
+      "outcomes": {
+        "correct": 51,
+        "incorrect_objective": 8,
+        "output_contract_error": 4,
+        "runtime_error": 2,
+        "truncated_response": 17
+      },
+      "thinking_available": 82
+    },
+    {
+      "model": "qwen3:14b",
+      "dataset": "IndustryOR",
+      "pipeline": "code",
+      "shot_condition": "zero_shot",
+      "n": 82,
+      "correct": 33,
+      "outcomes": {
+        "correct": 33,
+        "incorrect_objective": 14,
+        "invalid_response": 1,
+        "output_contract_error": 11,
+        "runtime_error": 4,
+        "truncated_response": 19
+      },
+      "thinking_available": 82
+    },
+    {
+      "model": "qwen3:14b",
+      "dataset": "IndustryOR",
+      "pipeline": "direct",
+      "shot_condition": "few_shot",
+      "n": 82,
+      "correct": 35,
+      "outcomes": {
+        "correct": 35,
+        "incorrect_objective": 15,
+        "truncated_response": 32
+      },
+      "thinking_available": 82
+    },
+    {
+      "model": "qwen3:14b",
+      "dataset": "IndustryOR",
+      "pipeline": "direct",
+      "shot_condition": "zero_shot",
+      "n": 82,
+      "correct": 41,
+      "outcomes": {
+        "correct": 41,
+        "incorrect_objective": 12,
+        "truncated_response": 29
+      },
+      "thinking_available": 82
+    },
+    {
+      "model": "qwen3:14b",
+      "dataset": "IndustryOR",
+      "pipeline": "formulation_code",
+      "shot_condition": "few_shot",
+      "n": 82,
+      "correct": 44,
+      "outcomes": {
+        "correct": 44,
+        "incorrect_objective": 18,
+        "output_contract_error": 4,
+        "runtime_error": 2,
+        "truncated_response": 14
+      },
+      "thinking_available": 82
+    },
+    {
+      "model": "qwen3:14b",
+      "dataset": "IndustryOR",
+      "pipeline": "formulation_code",
+      "shot_condition": "zero_shot",
+      "n": 82,
+      "correct": 17,
+      "outcomes": {
+        "correct": 17,
+        "incorrect_objective": 5,
+        "invalid_response": 2,
+        "output_contract_error": 28,
+        "runtime_error": 2,
+        "truncated_response": 28
+      },
+      "thinking_available": 82
+    },
+    {
+      "model": "qwen3:14b",
+      "dataset": "LogiOR",
+      "pipeline": "code",
+      "shot_condition": "few_shot",
+      "n": 92,
+      "correct": 45,
+      "outcomes": {
+        "correct": 45,
+        "incorrect_objective": 16,
+        "output_contract_error": 6,
+        "runtime_error": 6,
+        "truncated_response": 19
+      },
+      "thinking_available": 92
+    },
+    {
+      "model": "qwen3:14b",
+      "dataset": "LogiOR",
+      "pipeline": "code",
+      "shot_condition": "zero_shot",
+      "n": 92,
+      "correct": 34,
+      "outcomes": {
+        "blocked_import": 1,
+        "correct": 34,
+        "incorrect_objective": 11,
+        "output_contract_error": 14,
+        "runtime_error": 8,
+        "truncated_response": 24
+      },
+      "thinking_available": 92
+    },
+    {
+      "model": "qwen3:14b",
+      "dataset": "LogiOR",
+      "pipeline": "direct",
+      "shot_condition": "few_shot",
+      "n": 92,
+      "correct": 22,
+      "outcomes": {
+        "correct": 22,
+        "incorrect_objective": 20,
+        "truncated_response": 50
+      },
+      "thinking_available": 92
+    },
+    {
+      "model": "qwen3:14b",
+      "dataset": "LogiOR",
+      "pipeline": "direct",
+      "shot_condition": "zero_shot",
+      "n": 92,
+      "correct": 26,
+      "outcomes": {
+        "correct": 26,
+        "incorrect_objective": 20,
+        "truncated_response": 46
+      },
+      "thinking_available": 92
+    },
+    {
+      "model": "qwen3:14b",
+      "dataset": "LogiOR",
+      "pipeline": "formulation_code",
+      "shot_condition": "few_shot",
+      "n": 92,
+      "correct": 44,
+      "outcomes": {
+        "correct": 44,
+        "incorrect_objective": 15,
+        "output_contract_error": 7,
+        "runtime_error": 12,
+        "truncated_response": 14
+      },
+      "thinking_available": 92
+    },
+    {
+      "model": "qwen3:14b",
+      "dataset": "LogiOR",
+      "pipeline": "formulation_code",
+      "shot_condition": "zero_shot",
+      "n": 92,
+      "correct": 14,
+      "outcomes": {
+        "correct": 14,
+        "empty_response": 1,
+        "incorrect_objective": 4,
+        "output_contract_error": 44,
+        "runtime_error": 6,
+        "truncated_response": 23
+      },
+      "thinking_available": 92
+    },
+    {
+      "model": "qwen3:8b",
+      "dataset": "ComplexOR",
+      "pipeline": "code",
+      "shot_condition": "few_shot",
+      "n": 18,
+      "correct": 10,
+      "outcomes": {
+        "correct": 10,
+        "incorrect_objective": 3,
+        "runtime_error": 2,
+        "truncated_response": 3
+      },
+      "thinking_available": 18
+    },
+    {
+      "model": "qwen3:8b",
+      "dataset": "ComplexOR",
+      "pipeline": "code",
+      "shot_condition": "zero_shot",
+      "n": 18,
+      "correct": 8,
+      "outcomes": {
+        "correct": 8,
+        "incorrect_objective": 1,
+        "runtime_error": 3,
+        "truncated_response": 6
+      },
+      "thinking_available": 18
+    },
+    {
+      "model": "qwen3:8b",
+      "dataset": "ComplexOR",
+      "pipeline": "direct",
+      "shot_condition": "few_shot",
+      "n": 18,
+      "correct": 10,
+      "outcomes": {
+        "correct": 10,
+        "incorrect_objective": 4,
+        "truncated_response": 4
+      },
+      "thinking_available": 18
+    },
+    {
+      "model": "qwen3:8b",
+      "dataset": "ComplexOR",
+      "pipeline": "direct",
+      "shot_condition": "zero_shot",
+      "n": 18,
+      "correct": 13,
+      "outcomes": {
+        "correct": 13,
+        "incorrect_objective": 2,
+        "truncated_response": 3
+      },
+      "thinking_available": 18
+    },
+    {
+      "model": "qwen3:8b",
+      "dataset": "ComplexOR",
+      "pipeline": "formulation_code",
+      "shot_condition": "few_shot",
+      "n": 18,
+      "correct": 13,
+      "outcomes": {
+        "correct": 13,
+        "incorrect_objective": 2,
+        "runtime_error": 1,
+        "truncated_response": 2
+      },
+      "thinking_available": 18
+    },
+    {
+      "model": "qwen3:8b",
+      "dataset": "ComplexOR",
+      "pipeline": "formulation_code",
+      "shot_condition": "zero_shot",
+      "n": 18,
+      "correct": 9,
+      "outcomes": {
+        "correct": 9,
+        "output_contract_error": 1,
+        "runtime_error": 6,
+        "truncated_response": 2
+      },
+      "thinking_available": 18
+    },
+    {
+      "model": "qwen3:8b",
+      "dataset": "IndustryOR",
+      "pipeline": "code",
+      "shot_condition": "few_shot",
+      "n": 82,
+      "correct": 33,
+      "outcomes": {
+        "correct": 33,
+        "incorrect_objective": 9,
+        "runtime_error": 3,
+        "truncated_response": 37
+      },
+      "thinking_available": 82
+    },
+    {
+      "model": "qwen3:8b",
+      "dataset": "IndustryOR",
+      "pipeline": "code",
+      "shot_condition": "zero_shot",
+      "n": 82,
+      "correct": 22,
+      "outcomes": {
+        "correct": 22,
+        "incorrect_objective": 6,
+        "output_contract_error": 1,
+        "runtime_error": 10,
+        "truncated_response": 43
+      },
+      "thinking_available": 82
+    },
+    {
+      "model": "qwen3:8b",
+      "dataset": "IndustryOR",
+      "pipeline": "direct",
+      "shot_condition": "few_shot",
+      "n": 82,
+      "correct": 31,
+      "outcomes": {
+        "correct": 31,
+        "incorrect_objective": 7,
+        "truncated_response": 44
+      },
+      "thinking_available": 82
+    },
+    {
+      "model": "qwen3:8b",
+      "dataset": "IndustryOR",
+      "pipeline": "direct",
+      "shot_condition": "zero_shot",
+      "n": 82,
+      "correct": 28,
+      "outcomes": {
+        "correct": 28,
+        "incorrect_objective": 8,
+        "truncated_response": 46
+      },
+      "thinking_available": 82
+    },
+    {
+      "model": "qwen3:8b",
+      "dataset": "IndustryOR",
+      "pipeline": "formulation_code",
+      "shot_condition": "few_shot",
+      "n": 82,
+      "correct": 39,
+      "outcomes": {
+        "correct": 39,
+        "incorrect_objective": 9,
+        "output_contract_error": 3,
+        "truncated_response": 31
+      },
+      "thinking_available": 82
+    },
+    {
+      "model": "qwen3:8b",
+      "dataset": "IndustryOR",
+      "pipeline": "formulation_code",
+      "shot_condition": "zero_shot",
+      "n": 82,
+      "correct": 22,
+      "outcomes": {
+        "correct": 22,
+        "incorrect_objective": 10,
+        "invalid_response": 1,
+        "output_contract_error": 1,
+        "runtime_error": 15,
+        "truncated_response": 33
+      },
+      "thinking_available": 82
+    },
+    {
+      "model": "qwen3:8b",
+      "dataset": "LogiOR",
+      "pipeline": "code",
+      "shot_condition": "few_shot",
+      "n": 92,
+      "correct": 27,
+      "outcomes": {
+        "correct": 27,
+        "incorrect_objective": 7,
+        "output_contract_error": 1,
+        "runtime_error": 3,
+        "truncated_response": 54
+      },
+      "thinking_available": 92
+    },
+    {
+      "model": "qwen3:8b",
+      "dataset": "LogiOR",
+      "pipeline": "code",
+      "shot_condition": "zero_shot",
+      "n": 92,
+      "correct": 11,
+      "outcomes": {
+        "correct": 11,
+        "incorrect_objective": 9,
+        "runtime_error": 26,
+        "truncated_response": 46
+      },
+      "thinking_available": 92
+    },
+    {
+      "model": "qwen3:8b",
+      "dataset": "LogiOR",
+      "pipeline": "direct",
+      "shot_condition": "few_shot",
+      "n": 92,
+      "correct": 12,
+      "outcomes": {
+        "correct": 12,
+        "incorrect_objective": 15,
+        "truncated_response": 65
+      },
+      "thinking_available": 92
+    },
+    {
+      "model": "qwen3:8b",
+      "dataset": "LogiOR",
+      "pipeline": "direct",
+      "shot_condition": "zero_shot",
+      "n": 92,
+      "correct": 17,
+      "outcomes": {
+        "correct": 17,
+        "incorrect_objective": 15,
+        "truncated_response": 60
+      },
+      "thinking_available": 92
+    },
+    {
+      "model": "qwen3:8b",
+      "dataset": "LogiOR",
+      "pipeline": "formulation_code",
+      "shot_condition": "few_shot",
+      "n": 92,
+      "correct": 21,
+      "outcomes": {
+        "correct": 21,
+        "incorrect_objective": 7,
+        "output_contract_error": 5,
+        "runtime_error": 10,
+        "truncated_response": 49
+      },
+      "thinking_available": 92
+    },
+    {
+      "model": "qwen3:8b",
+      "dataset": "LogiOR",
+      "pipeline": "formulation_code",
+      "shot_condition": "zero_shot",
+      "n": 92,
+      "correct": 11,
+      "outcomes": {
+        "correct": 11,
+        "incorrect_objective": 9,
+        "output_contract_error": 3,
+        "runtime_error": 26,
+        "truncated_response": 43
+      },
+      "thinking_available": 92
+    }
+  ],
+  "observable_mechanisms": [
+    {
+      "model": "deepseek-r1:14b",
+      "outcome": "compilation_error",
+      "signature": "compilation_error",
+      "count": 17
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "outcome": "empty_response",
+      "signature": "thinking_present_without_content_other",
+      "count": 1
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "outcome": "invalid_response",
+      "signature": "invalid_response",
+      "count": 4
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "outcome": "output_contract_error",
+      "signature": "infeasible_no_marker",
+      "count": 4
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "outcome": "output_contract_error",
+      "signature": "marker_present_but_invalid_contract",
+      "count": 2
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "outcome": "output_contract_error",
+      "signature": "no_objective_marker",
+      "count": 31
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "outcome": "parse_error",
+      "signature": "parse_error",
+      "count": 12
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "outcome": "request_timeout",
+      "signature": "request_timeout",
+      "count": 2
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "outcome": "runtime_error",
+      "signature": "AttributeError",
+      "count": 79
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "outcome": "runtime_error",
+      "signature": "IndexError",
+      "count": 3
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "outcome": "runtime_error",
+      "signature": "KeyError",
+      "count": 43
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "outcome": "runtime_error",
+      "signature": "ModuleNotFoundError",
+      "count": 2
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "outcome": "runtime_error",
+      "signature": "NameError",
+      "count": 31
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "outcome": "runtime_error",
+      "signature": "TypeError",
+      "count": 49
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "outcome": "runtime_error",
+      "signature": "ValueError",
+      "count": 4
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "outcome": "runtime_error",
+      "signature": "runtime_exception_unclassified",
+      "count": 30
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "outcome": "truncated_response",
+      "signature": "output_cap_reached_after_partial_content",
+      "count": 22
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "outcome": "truncated_response",
+      "signature": "output_cap_reached_without_final_content",
+      "count": 187
+    },
+    {
+      "model": "gpt-oss:20b",
+      "outcome": "output_contract_error",
+      "signature": "infeasible_no_marker",
+      "count": 10
+    },
+    {
+      "model": "gpt-oss:20b",
+      "outcome": "output_contract_error",
+      "signature": "marker_present_but_invalid_contract",
+      "count": 2
+    },
+    {
+      "model": "gpt-oss:20b",
+      "outcome": "output_contract_error",
+      "signature": "no_objective_marker",
+      "count": 44
+    },
+    {
+      "model": "gpt-oss:20b",
+      "outcome": "parse_error",
+      "signature": "parse_error",
+      "count": 1
+    },
+    {
+      "model": "gpt-oss:20b",
+      "outcome": "runtime_error",
+      "signature": "AttributeError",
+      "count": 6
+    },
+    {
+      "model": "gpt-oss:20b",
+      "outcome": "runtime_error",
+      "signature": "ImportError",
+      "count": 1
+    },
+    {
+      "model": "gpt-oss:20b",
+      "outcome": "runtime_error",
+      "signature": "IndexError",
+      "count": 2
+    },
+    {
+      "model": "gpt-oss:20b",
+      "outcome": "runtime_error",
+      "signature": "KeyError",
+      "count": 10
+    },
+    {
+      "model": "gpt-oss:20b",
+      "outcome": "runtime_error",
+      "signature": "NameError",
+      "count": 1
+    },
+    {
+      "model": "gpt-oss:20b",
+      "outcome": "runtime_error",
+      "signature": "TypeError",
+      "count": 5
+    },
+    {
+      "model": "gpt-oss:20b",
+      "outcome": "runtime_error",
+      "signature": "runtime_exception_unclassified",
+      "count": 8
+    },
+    {
+      "model": "gpt-oss:20b",
+      "outcome": "timeout",
+      "signature": "timeout",
+      "count": 6
+    },
+    {
+      "model": "gpt-oss:20b",
+      "outcome": "truncated_response",
+      "signature": "output_cap_reached_after_partial_content",
+      "count": 16
+    },
+    {
+      "model": "gpt-oss:20b",
+      "outcome": "truncated_response",
+      "signature": "output_cap_reached_without_final_content",
+      "count": 164
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "outcome": "blocked_import",
+      "signature": "blocked_import",
+      "count": 1
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "outcome": "output_contract_error",
+      "signature": "no_objective_marker",
+      "count": 10
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "outcome": "runtime_error",
+      "signature": "AttributeError",
+      "count": 38
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "outcome": "runtime_error",
+      "signature": "TypeError",
+      "count": 16
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "outcome": "runtime_error",
+      "signature": "ValueError",
+      "count": 1
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "outcome": "runtime_error",
+      "signature": "runtime_exception_unclassified",
+      "count": 1
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "outcome": "truncated_response",
+      "signature": "output_cap_reached_after_partial_content",
+      "count": 45
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "outcome": "truncated_response",
+      "signature": "output_cap_reached_without_final_content",
+      "count": 821
+    },
+    {
+      "model": "qwen3.5:9b",
+      "outcome": "compilation_error",
+      "signature": "compilation_error",
+      "count": 4
+    },
+    {
+      "model": "qwen3.5:9b",
+      "outcome": "empty_response",
+      "signature": "thinking_present_without_content_other",
+      "count": 1
+    },
+    {
+      "model": "qwen3.5:9b",
+      "outcome": "output_contract_error",
+      "signature": "infeasible_no_marker",
+      "count": 8
+    },
+    {
+      "model": "qwen3.5:9b",
+      "outcome": "output_contract_error",
+      "signature": "no_objective_marker",
+      "count": 26
+    },
+    {
+      "model": "qwen3.5:9b",
+      "outcome": "runtime_error",
+      "signature": "AttributeError",
+      "count": 19
+    },
+    {
+      "model": "qwen3.5:9b",
+      "outcome": "runtime_error",
+      "signature": "ImportError",
+      "count": 8
+    },
+    {
+      "model": "qwen3.5:9b",
+      "outcome": "runtime_error",
+      "signature": "IndexError",
+      "count": 3
+    },
+    {
+      "model": "qwen3.5:9b",
+      "outcome": "runtime_error",
+      "signature": "KeyError",
+      "count": 37
+    },
+    {
+      "model": "qwen3.5:9b",
+      "outcome": "runtime_error",
+      "signature": "NameError",
+      "count": 5
+    },
+    {
+      "model": "qwen3.5:9b",
+      "outcome": "runtime_error",
+      "signature": "TypeError",
+      "count": 8
+    },
+    {
+      "model": "qwen3.5:9b",
+      "outcome": "runtime_error",
+      "signature": "runtime_exception_unclassified",
+      "count": 6
+    },
+    {
+      "model": "qwen3.5:9b",
+      "outcome": "truncated_response",
+      "signature": "output_cap_reached_after_partial_content",
+      "count": 39
+    },
+    {
+      "model": "qwen3.5:9b",
+      "outcome": "truncated_response",
+      "signature": "output_cap_reached_without_final_content",
+      "count": 699
+    },
+    {
+      "model": "qwen3:14b",
+      "outcome": "blocked_import",
+      "signature": "blocked_import",
+      "count": 1
+    },
+    {
+      "model": "qwen3:14b",
+      "outcome": "empty_response",
+      "signature": "thinking_present_without_content_other",
+      "count": 1
+    },
+    {
+      "model": "qwen3:14b",
+      "outcome": "invalid_response",
+      "signature": "invalid_response",
+      "count": 3
+    },
+    {
+      "model": "qwen3:14b",
+      "outcome": "output_contract_error",
+      "signature": "infeasible_no_marker",
+      "count": 8
+    },
+    {
+      "model": "qwen3:14b",
+      "outcome": "output_contract_error",
+      "signature": "no_objective_marker",
+      "count": 125
+    },
+    {
+      "model": "qwen3:14b",
+      "outcome": "runtime_error",
+      "signature": "AttributeError",
+      "count": 8
+    },
+    {
+      "model": "qwen3:14b",
+      "outcome": "runtime_error",
+      "signature": "IndexError",
+      "count": 2
+    },
+    {
+      "model": "qwen3:14b",
+      "outcome": "runtime_error",
+      "signature": "KeyError",
+      "count": 19
+    },
+    {
+      "model": "qwen3:14b",
+      "outcome": "runtime_error",
+      "signature": "TypeError",
+      "count": 4
+    },
+    {
+      "model": "qwen3:14b",
+      "outcome": "runtime_error",
+      "signature": "runtime_exception_unclassified",
+      "count": 12
+    },
+    {
+      "model": "qwen3:14b",
+      "outcome": "truncated_response",
+      "signature": "output_cap_reached_after_partial_content",
+      "count": 19
+    },
+    {
+      "model": "qwen3:14b",
+      "outcome": "truncated_response",
+      "signature": "output_cap_reached_without_final_content",
+      "count": 308
+    },
+    {
+      "model": "qwen3:8b",
+      "outcome": "invalid_response",
+      "signature": "invalid_response",
+      "count": 1
+    },
+    {
+      "model": "qwen3:8b",
+      "outcome": "output_contract_error",
+      "signature": "infeasible_no_marker",
+      "count": 2
+    },
+    {
+      "model": "qwen3:8b",
+      "outcome": "output_contract_error",
+      "signature": "no_objective_marker",
+      "count": 13
+    },
+    {
+      "model": "qwen3:8b",
+      "outcome": "runtime_error",
+      "signature": "AttributeError",
+      "count": 7
+    },
+    {
+      "model": "qwen3:8b",
+      "outcome": "runtime_error",
+      "signature": "IndexError",
+      "count": 2
+    },
+    {
+      "model": "qwen3:8b",
+      "outcome": "runtime_error",
+      "signature": "KeyError",
+      "count": 21
+    },
+    {
+      "model": "qwen3:8b",
+      "outcome": "runtime_error",
+      "signature": "NameError",
+      "count": 1
+    },
+    {
+      "model": "qwen3:8b",
+      "outcome": "runtime_error",
+      "signature": "TypeError",
+      "count": 2
+    },
+    {
+      "model": "qwen3:8b",
+      "outcome": "runtime_error",
+      "signature": "runtime_exception_unclassified",
+      "count": 72
+    },
+    {
+      "model": "qwen3:8b",
+      "outcome": "truncated_response",
+      "signature": "output_cap_reached_after_partial_content",
+      "count": 17
+    },
+    {
+      "model": "qwen3:8b",
+      "outcome": "truncated_response",
+      "signature": "output_cap_reached_without_final_content",
+      "count": 554
+    }
+  ],
+  "shot_pairs": [
+    {
+      "model": "gpt-oss:20b",
+      "dataset": "ComplexOR",
+      "pipeline": "direct",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 15,
+      "left_only": 0,
+      "right_only": 1,
+      "both_wrong": 2
+    },
+    {
+      "model": "gpt-oss:20b",
+      "dataset": "ComplexOR",
+      "pipeline": "code",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 13,
+      "left_only": 1,
+      "right_only": 1,
+      "both_wrong": 3
+    },
+    {
+      "model": "gpt-oss:20b",
+      "dataset": "ComplexOR",
+      "pipeline": "formulation_code",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 11,
+      "left_only": 2,
+      "right_only": 2,
+      "both_wrong": 3
+    },
+    {
+      "model": "gpt-oss:20b",
+      "dataset": "LogiOR",
+      "pipeline": "direct",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 29,
+      "left_only": 10,
+      "right_only": 10,
+      "both_wrong": 43
+    },
+    {
+      "model": "gpt-oss:20b",
+      "dataset": "LogiOR",
+      "pipeline": "code",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 47,
+      "left_only": 2,
+      "right_only": 11,
+      "both_wrong": 32
+    },
+    {
+      "model": "gpt-oss:20b",
+      "dataset": "LogiOR",
+      "pipeline": "formulation_code",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 48,
+      "left_only": 7,
+      "right_only": 7,
+      "both_wrong": 30
+    },
+    {
+      "model": "gpt-oss:20b",
+      "dataset": "IndustryOR",
+      "pipeline": "direct",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 37,
+      "left_only": 11,
+      "right_only": 9,
+      "both_wrong": 25
+    },
+    {
+      "model": "gpt-oss:20b",
+      "dataset": "IndustryOR",
+      "pipeline": "code",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 41,
+      "left_only": 11,
+      "right_only": 6,
+      "both_wrong": 24
+    },
+    {
+      "model": "gpt-oss:20b",
+      "dataset": "IndustryOR",
+      "pipeline": "formulation_code",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 44,
+      "left_only": 7,
+      "right_only": 11,
+      "both_wrong": 20
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "dataset": "ComplexOR",
+      "pipeline": "direct",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 13,
+      "left_only": 0,
+      "right_only": 2,
+      "both_wrong": 3
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "dataset": "ComplexOR",
+      "pipeline": "code",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 4,
+      "left_only": 2,
+      "right_only": 6,
+      "both_wrong": 6
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "dataset": "ComplexOR",
+      "pipeline": "formulation_code",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 4,
+      "left_only": 2,
+      "right_only": 6,
+      "both_wrong": 6
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "dataset": "LogiOR",
+      "pipeline": "direct",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 17,
+      "left_only": 7,
+      "right_only": 8,
+      "both_wrong": 60
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "dataset": "LogiOR",
+      "pipeline": "code",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 16,
+      "left_only": 9,
+      "right_only": 14,
+      "both_wrong": 53
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "dataset": "LogiOR",
+      "pipeline": "formulation_code",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 12,
+      "left_only": 5,
+      "right_only": 12,
+      "both_wrong": 63
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "dataset": "IndustryOR",
+      "pipeline": "direct",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 21,
+      "left_only": 16,
+      "right_only": 8,
+      "both_wrong": 37
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "dataset": "IndustryOR",
+      "pipeline": "code",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 21,
+      "left_only": 8,
+      "right_only": 19,
+      "both_wrong": 34
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "dataset": "IndustryOR",
+      "pipeline": "formulation_code",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 19,
+      "left_only": 4,
+      "right_only": 21,
+      "both_wrong": 38
+    },
+    {
+      "model": "qwen3:14b",
+      "dataset": "ComplexOR",
+      "pipeline": "direct",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 12,
+      "left_only": 2,
+      "right_only": 1,
+      "both_wrong": 3
+    },
+    {
+      "model": "qwen3:14b",
+      "dataset": "ComplexOR",
+      "pipeline": "code",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 8,
+      "left_only": 0,
+      "right_only": 3,
+      "both_wrong": 7
+    },
+    {
+      "model": "qwen3:14b",
+      "dataset": "ComplexOR",
+      "pipeline": "formulation_code",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 2,
+      "left_only": 2,
+      "right_only": 7,
+      "both_wrong": 7
+    },
+    {
+      "model": "qwen3:14b",
+      "dataset": "LogiOR",
+      "pipeline": "direct",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 19,
+      "left_only": 7,
+      "right_only": 3,
+      "both_wrong": 63
+    },
+    {
+      "model": "qwen3:14b",
+      "dataset": "LogiOR",
+      "pipeline": "code",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 26,
+      "left_only": 8,
+      "right_only": 19,
+      "both_wrong": 39
+    },
+    {
+      "model": "qwen3:14b",
+      "dataset": "LogiOR",
+      "pipeline": "formulation_code",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 12,
+      "left_only": 2,
+      "right_only": 32,
+      "both_wrong": 46
+    },
+    {
+      "model": "qwen3:14b",
+      "dataset": "IndustryOR",
+      "pipeline": "direct",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 28,
+      "left_only": 13,
+      "right_only": 7,
+      "both_wrong": 34
+    },
+    {
+      "model": "qwen3:14b",
+      "dataset": "IndustryOR",
+      "pipeline": "code",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 30,
+      "left_only": 3,
+      "right_only": 21,
+      "both_wrong": 28
+    },
+    {
+      "model": "qwen3:14b",
+      "dataset": "IndustryOR",
+      "pipeline": "formulation_code",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 14,
+      "left_only": 3,
+      "right_only": 30,
+      "both_wrong": 35
+    },
+    {
+      "model": "qwen3.5:9b",
+      "dataset": "ComplexOR",
+      "pipeline": "direct",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 7,
+      "left_only": 2,
+      "right_only": 1,
+      "both_wrong": 8
+    },
+    {
+      "model": "qwen3.5:9b",
+      "dataset": "ComplexOR",
+      "pipeline": "code",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 1,
+      "left_only": 3,
+      "right_only": 6,
+      "both_wrong": 8
+    },
+    {
+      "model": "qwen3.5:9b",
+      "dataset": "ComplexOR",
+      "pipeline": "formulation_code",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 3,
+      "left_only": 0,
+      "right_only": 7,
+      "both_wrong": 8
+    },
+    {
+      "model": "qwen3.5:9b",
+      "dataset": "LogiOR",
+      "pipeline": "direct",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 2,
+      "left_only": 3,
+      "right_only": 3,
+      "both_wrong": 84
+    },
+    {
+      "model": "qwen3.5:9b",
+      "dataset": "LogiOR",
+      "pipeline": "code",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 15,
+      "left_only": 6,
+      "right_only": 14,
+      "both_wrong": 57
+    },
+    {
+      "model": "qwen3.5:9b",
+      "dataset": "LogiOR",
+      "pipeline": "formulation_code",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 5,
+      "left_only": 1,
+      "right_only": 31,
+      "both_wrong": 55
+    },
+    {
+      "model": "qwen3.5:9b",
+      "dataset": "IndustryOR",
+      "pipeline": "direct",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 6,
+      "left_only": 5,
+      "right_only": 7,
+      "both_wrong": 64
+    },
+    {
+      "model": "qwen3.5:9b",
+      "dataset": "IndustryOR",
+      "pipeline": "code",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 17,
+      "left_only": 3,
+      "right_only": 15,
+      "both_wrong": 47
+    },
+    {
+      "model": "qwen3.5:9b",
+      "dataset": "IndustryOR",
+      "pipeline": "formulation_code",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 6,
+      "left_only": 1,
+      "right_only": 23,
+      "both_wrong": 52
+    },
+    {
+      "model": "qwen3:8b",
+      "dataset": "ComplexOR",
+      "pipeline": "direct",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 10,
+      "left_only": 3,
+      "right_only": 0,
+      "both_wrong": 5
+    },
+    {
+      "model": "qwen3:8b",
+      "dataset": "ComplexOR",
+      "pipeline": "code",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 6,
+      "left_only": 2,
+      "right_only": 4,
+      "both_wrong": 6
+    },
+    {
+      "model": "qwen3:8b",
+      "dataset": "ComplexOR",
+      "pipeline": "formulation_code",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 9,
+      "left_only": 0,
+      "right_only": 4,
+      "both_wrong": 5
+    },
+    {
+      "model": "qwen3:8b",
+      "dataset": "LogiOR",
+      "pipeline": "direct",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 10,
+      "left_only": 7,
+      "right_only": 2,
+      "both_wrong": 73
+    },
+    {
+      "model": "qwen3:8b",
+      "dataset": "LogiOR",
+      "pipeline": "code",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 9,
+      "left_only": 2,
+      "right_only": 18,
+      "both_wrong": 63
+    },
+    {
+      "model": "qwen3:8b",
+      "dataset": "LogiOR",
+      "pipeline": "formulation_code",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 5,
+      "left_only": 6,
+      "right_only": 16,
+      "both_wrong": 65
+    },
+    {
+      "model": "qwen3:8b",
+      "dataset": "IndustryOR",
+      "pipeline": "direct",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 25,
+      "left_only": 3,
+      "right_only": 6,
+      "both_wrong": 48
+    },
+    {
+      "model": "qwen3:8b",
+      "dataset": "IndustryOR",
+      "pipeline": "code",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 16,
+      "left_only": 6,
+      "right_only": 17,
+      "both_wrong": 43
+    },
+    {
+      "model": "qwen3:8b",
+      "dataset": "IndustryOR",
+      "pipeline": "formulation_code",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 19,
+      "left_only": 3,
+      "right_only": 20,
+      "both_wrong": 40
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "dataset": "ComplexOR",
+      "pipeline": "direct",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 10,
+      "left_only": 1,
+      "right_only": 1,
+      "both_wrong": 6
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "dataset": "ComplexOR",
+      "pipeline": "code",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 1,
+      "left_only": 0,
+      "right_only": 11,
+      "both_wrong": 6
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "dataset": "ComplexOR",
+      "pipeline": "formulation_code",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 1,
+      "left_only": 1,
+      "right_only": 10,
+      "both_wrong": 6
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "dataset": "LogiOR",
+      "pipeline": "direct",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 10,
+      "left_only": 1,
+      "right_only": 0,
+      "both_wrong": 81
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "dataset": "LogiOR",
+      "pipeline": "code",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 0,
+      "left_only": 0,
+      "right_only": 21,
+      "both_wrong": 71
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "dataset": "LogiOR",
+      "pipeline": "formulation_code",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 2,
+      "left_only": 1,
+      "right_only": 19,
+      "both_wrong": 70
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "dataset": "IndustryOR",
+      "pipeline": "direct",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 13,
+      "left_only": 4,
+      "right_only": 6,
+      "both_wrong": 59
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "dataset": "IndustryOR",
+      "pipeline": "code",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 0,
+      "left_only": 0,
+      "right_only": 19,
+      "both_wrong": 63
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "dataset": "IndustryOR",
+      "pipeline": "formulation_code",
+      "comparison": "few_shot minus zero_shot",
+      "both_correct": 2,
+      "left_only": 0,
+      "right_only": 32,
+      "both_wrong": 48
+    }
+  ],
+  "pipeline_pairs": [
+    {
+      "model": "gpt-oss:20b",
+      "dataset": "ComplexOR",
+      "shot_condition": "zero_shot",
+      "comparison": "code minus direct",
+      "both_correct": 13,
+      "left_only": 2,
+      "right_only": 1,
+      "both_wrong": 2
+    },
+    {
+      "model": "gpt-oss:20b",
+      "dataset": "ComplexOR",
+      "shot_condition": "few_shot",
+      "comparison": "code minus direct",
+      "both_correct": 14,
+      "left_only": 2,
+      "right_only": 0,
+      "both_wrong": 2
+    },
+    {
+      "model": "gpt-oss:20b",
+      "dataset": "LogiOR",
+      "shot_condition": "zero_shot",
+      "comparison": "code minus direct",
+      "both_correct": 30,
+      "left_only": 9,
+      "right_only": 19,
+      "both_wrong": 34
+    },
+    {
+      "model": "gpt-oss:20b",
+      "dataset": "LogiOR",
+      "shot_condition": "few_shot",
+      "comparison": "code minus direct",
+      "both_correct": 31,
+      "left_only": 8,
+      "right_only": 27,
+      "both_wrong": 26
+    },
+    {
+      "model": "gpt-oss:20b",
+      "dataset": "IndustryOR",
+      "shot_condition": "zero_shot",
+      "comparison": "code minus direct",
+      "both_correct": 42,
+      "left_only": 6,
+      "right_only": 10,
+      "both_wrong": 24
+    },
+    {
+      "model": "gpt-oss:20b",
+      "dataset": "IndustryOR",
+      "shot_condition": "few_shot",
+      "comparison": "code minus direct",
+      "both_correct": 34,
+      "left_only": 12,
+      "right_only": 13,
+      "both_wrong": 23
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "dataset": "ComplexOR",
+      "shot_condition": "zero_shot",
+      "comparison": "code minus direct",
+      "both_correct": 5,
+      "left_only": 8,
+      "right_only": 1,
+      "both_wrong": 4
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "dataset": "ComplexOR",
+      "shot_condition": "few_shot",
+      "comparison": "code minus direct",
+      "both_correct": 9,
+      "left_only": 6,
+      "right_only": 1,
+      "both_wrong": 2
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "dataset": "LogiOR",
+      "shot_condition": "zero_shot",
+      "comparison": "code minus direct",
+      "both_correct": 13,
+      "left_only": 11,
+      "right_only": 12,
+      "both_wrong": 56
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "dataset": "LogiOR",
+      "shot_condition": "few_shot",
+      "comparison": "code minus direct",
+      "both_correct": 14,
+      "left_only": 11,
+      "right_only": 16,
+      "both_wrong": 51
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "dataset": "IndustryOR",
+      "shot_condition": "zero_shot",
+      "comparison": "code minus direct",
+      "both_correct": 21,
+      "left_only": 16,
+      "right_only": 8,
+      "both_wrong": 37
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "dataset": "IndustryOR",
+      "shot_condition": "few_shot",
+      "comparison": "code minus direct",
+      "both_correct": 20,
+      "left_only": 9,
+      "right_only": 20,
+      "both_wrong": 33
+    },
+    {
+      "model": "qwen3:14b",
+      "dataset": "ComplexOR",
+      "shot_condition": "zero_shot",
+      "comparison": "code minus direct",
+      "both_correct": 7,
+      "left_only": 7,
+      "right_only": 1,
+      "both_wrong": 3
+    },
+    {
+      "model": "qwen3:14b",
+      "dataset": "ComplexOR",
+      "shot_condition": "few_shot",
+      "comparison": "code minus direct",
+      "both_correct": 10,
+      "left_only": 3,
+      "right_only": 1,
+      "both_wrong": 4
+    },
+    {
+      "model": "qwen3:14b",
+      "dataset": "LogiOR",
+      "shot_condition": "zero_shot",
+      "comparison": "code minus direct",
+      "both_correct": 15,
+      "left_only": 11,
+      "right_only": 19,
+      "both_wrong": 47
+    },
+    {
+      "model": "qwen3:14b",
+      "dataset": "LogiOR",
+      "shot_condition": "few_shot",
+      "comparison": "code minus direct",
+      "both_correct": 17,
+      "left_only": 5,
+      "right_only": 28,
+      "both_wrong": 42
+    },
+    {
+      "model": "qwen3:14b",
+      "dataset": "IndustryOR",
+      "shot_condition": "zero_shot",
+      "comparison": "code minus direct",
+      "both_correct": 21,
+      "left_only": 20,
+      "right_only": 12,
+      "both_wrong": 29
+    },
+    {
+      "model": "qwen3:14b",
+      "dataset": "IndustryOR",
+      "shot_condition": "few_shot",
+      "comparison": "code minus direct",
+      "both_correct": 26,
+      "left_only": 9,
+      "right_only": 25,
+      "both_wrong": 22
+    },
+    {
+      "model": "qwen3.5:9b",
+      "dataset": "ComplexOR",
+      "shot_condition": "zero_shot",
+      "comparison": "code minus direct",
+      "both_correct": 1,
+      "left_only": 8,
+      "right_only": 3,
+      "both_wrong": 6
+    },
+    {
+      "model": "qwen3.5:9b",
+      "dataset": "ComplexOR",
+      "shot_condition": "few_shot",
+      "comparison": "code minus direct",
+      "both_correct": 6,
+      "left_only": 2,
+      "right_only": 1,
+      "both_wrong": 9
+    },
+    {
+      "model": "qwen3.5:9b",
+      "dataset": "LogiOR",
+      "shot_condition": "zero_shot",
+      "comparison": "code minus direct",
+      "both_correct": 0,
+      "left_only": 5,
+      "right_only": 21,
+      "both_wrong": 66
+    },
+    {
+      "model": "qwen3.5:9b",
+      "dataset": "LogiOR",
+      "shot_condition": "few_shot",
+      "comparison": "code minus direct",
+      "both_correct": 4,
+      "left_only": 1,
+      "right_only": 25,
+      "both_wrong": 62
+    },
+    {
+      "model": "qwen3.5:9b",
+      "dataset": "IndustryOR",
+      "shot_condition": "zero_shot",
+      "comparison": "code minus direct",
+      "both_correct": 6,
+      "left_only": 5,
+      "right_only": 14,
+      "both_wrong": 57
+    },
+    {
+      "model": "qwen3.5:9b",
+      "dataset": "IndustryOR",
+      "shot_condition": "few_shot",
+      "comparison": "code minus direct",
+      "both_correct": 8,
+      "left_only": 5,
+      "right_only": 24,
+      "both_wrong": 45
+    },
+    {
+      "model": "qwen3:8b",
+      "dataset": "ComplexOR",
+      "shot_condition": "zero_shot",
+      "comparison": "code minus direct",
+      "both_correct": 6,
+      "left_only": 7,
+      "right_only": 2,
+      "both_wrong": 3
+    },
+    {
+      "model": "qwen3:8b",
+      "dataset": "ComplexOR",
+      "shot_condition": "few_shot",
+      "comparison": "code minus direct",
+      "both_correct": 7,
+      "left_only": 3,
+      "right_only": 3,
+      "both_wrong": 5
+    },
+    {
+      "model": "qwen3:8b",
+      "dataset": "LogiOR",
+      "shot_condition": "zero_shot",
+      "comparison": "code minus direct",
+      "both_correct": 3,
+      "left_only": 14,
+      "right_only": 8,
+      "both_wrong": 67
+    },
+    {
+      "model": "qwen3:8b",
+      "dataset": "LogiOR",
+      "shot_condition": "few_shot",
+      "comparison": "code minus direct",
+      "both_correct": 5,
+      "left_only": 7,
+      "right_only": 22,
+      "both_wrong": 58
+    },
+    {
+      "model": "qwen3:8b",
+      "dataset": "IndustryOR",
+      "shot_condition": "zero_shot",
+      "comparison": "code minus direct",
+      "both_correct": 13,
+      "left_only": 15,
+      "right_only": 9,
+      "both_wrong": 45
+    },
+    {
+      "model": "qwen3:8b",
+      "dataset": "IndustryOR",
+      "shot_condition": "few_shot",
+      "comparison": "code minus direct",
+      "both_correct": 20,
+      "left_only": 11,
+      "right_only": 13,
+      "both_wrong": 38
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "dataset": "ComplexOR",
+      "shot_condition": "zero_shot",
+      "comparison": "code minus direct",
+      "both_correct": 1,
+      "left_only": 10,
+      "right_only": 0,
+      "both_wrong": 7
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "dataset": "ComplexOR",
+      "shot_condition": "few_shot",
+      "comparison": "code minus direct",
+      "both_correct": 8,
+      "left_only": 3,
+      "right_only": 4,
+      "both_wrong": 3
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "dataset": "LogiOR",
+      "shot_condition": "zero_shot",
+      "comparison": "code minus direct",
+      "both_correct": 0,
+      "left_only": 11,
+      "right_only": 0,
+      "both_wrong": 81
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "dataset": "LogiOR",
+      "shot_condition": "few_shot",
+      "comparison": "code minus direct",
+      "both_correct": 9,
+      "left_only": 1,
+      "right_only": 12,
+      "both_wrong": 70
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "dataset": "IndustryOR",
+      "shot_condition": "zero_shot",
+      "comparison": "code minus direct",
+      "both_correct": 0,
+      "left_only": 17,
+      "right_only": 0,
+      "both_wrong": 65
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "dataset": "IndustryOR",
+      "shot_condition": "few_shot",
+      "comparison": "code minus direct",
+      "both_correct": 6,
+      "left_only": 13,
+      "right_only": 13,
+      "both_wrong": 50
+    },
+    {
+      "model": "gpt-oss:20b",
+      "dataset": "ComplexOR",
+      "shot_condition": "zero_shot",
+      "comparison": "formulation_code minus code",
+      "both_correct": 13,
+      "left_only": 1,
+      "right_only": 0,
+      "both_wrong": 4
+    },
+    {
+      "model": "gpt-oss:20b",
+      "dataset": "ComplexOR",
+      "shot_condition": "few_shot",
+      "comparison": "formulation_code minus code",
+      "both_correct": 12,
+      "left_only": 2,
+      "right_only": 1,
+      "both_wrong": 3
+    },
+    {
+      "model": "gpt-oss:20b",
+      "dataset": "LogiOR",
+      "shot_condition": "zero_shot",
+      "comparison": "formulation_code minus code",
+      "both_correct": 42,
+      "left_only": 7,
+      "right_only": 13,
+      "both_wrong": 30
+    },
+    {
+      "model": "gpt-oss:20b",
+      "dataset": "LogiOR",
+      "shot_condition": "few_shot",
+      "comparison": "formulation_code minus code",
+      "both_correct": 46,
+      "left_only": 12,
+      "right_only": 9,
+      "both_wrong": 25
+    },
+    {
+      "model": "gpt-oss:20b",
+      "dataset": "IndustryOR",
+      "shot_condition": "zero_shot",
+      "comparison": "formulation_code minus code",
+      "both_correct": 44,
+      "left_only": 8,
+      "right_only": 7,
+      "both_wrong": 23
+    },
+    {
+      "model": "gpt-oss:20b",
+      "dataset": "IndustryOR",
+      "shot_condition": "few_shot",
+      "comparison": "formulation_code minus code",
+      "both_correct": 42,
+      "left_only": 5,
+      "right_only": 13,
+      "both_wrong": 22
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "dataset": "ComplexOR",
+      "shot_condition": "zero_shot",
+      "comparison": "formulation_code minus code",
+      "both_correct": 3,
+      "left_only": 3,
+      "right_only": 3,
+      "both_wrong": 9
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "dataset": "ComplexOR",
+      "shot_condition": "few_shot",
+      "comparison": "formulation_code minus code",
+      "both_correct": 9,
+      "left_only": 1,
+      "right_only": 1,
+      "both_wrong": 7
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "dataset": "LogiOR",
+      "shot_condition": "zero_shot",
+      "comparison": "formulation_code minus code",
+      "both_correct": 11,
+      "left_only": 14,
+      "right_only": 6,
+      "both_wrong": 61
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "dataset": "LogiOR",
+      "shot_condition": "few_shot",
+      "comparison": "formulation_code minus code",
+      "both_correct": 19,
+      "left_only": 11,
+      "right_only": 5,
+      "both_wrong": 57
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "dataset": "IndustryOR",
+      "shot_condition": "zero_shot",
+      "comparison": "formulation_code minus code",
+      "both_correct": 15,
+      "left_only": 14,
+      "right_only": 8,
+      "both_wrong": 45
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "dataset": "IndustryOR",
+      "shot_condition": "few_shot",
+      "comparison": "formulation_code minus code",
+      "both_correct": 30,
+      "left_only": 10,
+      "right_only": 10,
+      "both_wrong": 32
+    },
+    {
+      "model": "qwen3:14b",
+      "dataset": "ComplexOR",
+      "shot_condition": "zero_shot",
+      "comparison": "formulation_code minus code",
+      "both_correct": 1,
+      "left_only": 7,
+      "right_only": 3,
+      "both_wrong": 7
+    },
+    {
+      "model": "qwen3:14b",
+      "dataset": "ComplexOR",
+      "shot_condition": "few_shot",
+      "comparison": "formulation_code minus code",
+      "both_correct": 7,
+      "left_only": 4,
+      "right_only": 2,
+      "both_wrong": 5
+    },
+    {
+      "model": "qwen3:14b",
+      "dataset": "LogiOR",
+      "shot_condition": "zero_shot",
+      "comparison": "formulation_code minus code",
+      "both_correct": 11,
+      "left_only": 23,
+      "right_only": 3,
+      "both_wrong": 55
+    },
+    {
+      "model": "qwen3:14b",
+      "dataset": "LogiOR",
+      "shot_condition": "few_shot",
+      "comparison": "formulation_code minus code",
+      "both_correct": 36,
+      "left_only": 9,
+      "right_only": 8,
+      "both_wrong": 39
+    },
+    {
+      "model": "qwen3:14b",
+      "dataset": "IndustryOR",
+      "shot_condition": "zero_shot",
+      "comparison": "formulation_code minus code",
+      "both_correct": 8,
+      "left_only": 25,
+      "right_only": 9,
+      "both_wrong": 40
+    },
+    {
+      "model": "qwen3:14b",
+      "dataset": "IndustryOR",
+      "shot_condition": "few_shot",
+      "comparison": "formulation_code minus code",
+      "both_correct": 39,
+      "left_only": 12,
+      "right_only": 5,
+      "both_wrong": 26
+    },
+    {
+      "model": "qwen3.5:9b",
+      "dataset": "ComplexOR",
+      "shot_condition": "zero_shot",
+      "comparison": "formulation_code minus code",
+      "both_correct": 1,
+      "left_only": 3,
+      "right_only": 2,
+      "both_wrong": 12
+    },
+    {
+      "model": "qwen3.5:9b",
+      "dataset": "ComplexOR",
+      "shot_condition": "few_shot",
+      "comparison": "formulation_code minus code",
+      "both_correct": 4,
+      "left_only": 3,
+      "right_only": 6,
+      "both_wrong": 5
+    },
+    {
+      "model": "qwen3.5:9b",
+      "dataset": "LogiOR",
+      "shot_condition": "zero_shot",
+      "comparison": "formulation_code minus code",
+      "both_correct": 2,
+      "left_only": 19,
+      "right_only": 4,
+      "both_wrong": 67
+    },
+    {
+      "model": "qwen3.5:9b",
+      "dataset": "LogiOR",
+      "shot_condition": "few_shot",
+      "comparison": "formulation_code minus code",
+      "both_correct": 23,
+      "left_only": 6,
+      "right_only": 13,
+      "both_wrong": 50
+    },
+    {
+      "model": "qwen3.5:9b",
+      "dataset": "IndustryOR",
+      "shot_condition": "zero_shot",
+      "comparison": "formulation_code minus code",
+      "both_correct": 2,
+      "left_only": 18,
+      "right_only": 5,
+      "both_wrong": 57
+    },
+    {
+      "model": "qwen3.5:9b",
+      "dataset": "IndustryOR",
+      "shot_condition": "few_shot",
+      "comparison": "formulation_code minus code",
+      "both_correct": 19,
+      "left_only": 13,
+      "right_only": 10,
+      "both_wrong": 40
+    },
+    {
+      "model": "qwen3:8b",
+      "dataset": "ComplexOR",
+      "shot_condition": "zero_shot",
+      "comparison": "formulation_code minus code",
+      "both_correct": 8,
+      "left_only": 0,
+      "right_only": 1,
+      "both_wrong": 9
+    },
+    {
+      "model": "qwen3:8b",
+      "dataset": "ComplexOR",
+      "shot_condition": "few_shot",
+      "comparison": "formulation_code minus code",
+      "both_correct": 9,
+      "left_only": 1,
+      "right_only": 4,
+      "both_wrong": 4
+    },
+    {
+      "model": "qwen3:8b",
+      "dataset": "LogiOR",
+      "shot_condition": "zero_shot",
+      "comparison": "formulation_code minus code",
+      "both_correct": 2,
+      "left_only": 9,
+      "right_only": 9,
+      "both_wrong": 72
+    },
+    {
+      "model": "qwen3:8b",
+      "dataset": "LogiOR",
+      "shot_condition": "few_shot",
+      "comparison": "formulation_code minus code",
+      "both_correct": 15,
+      "left_only": 12,
+      "right_only": 6,
+      "both_wrong": 59
+    },
+    {
+      "model": "qwen3:8b",
+      "dataset": "IndustryOR",
+      "shot_condition": "zero_shot",
+      "comparison": "formulation_code minus code",
+      "both_correct": 10,
+      "left_only": 12,
+      "right_only": 12,
+      "both_wrong": 48
+    },
+    {
+      "model": "qwen3:8b",
+      "dataset": "IndustryOR",
+      "shot_condition": "few_shot",
+      "comparison": "formulation_code minus code",
+      "both_correct": 25,
+      "left_only": 8,
+      "right_only": 14,
+      "both_wrong": 35
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "dataset": "ComplexOR",
+      "shot_condition": "zero_shot",
+      "comparison": "formulation_code minus code",
+      "both_correct": 0,
+      "left_only": 1,
+      "right_only": 2,
+      "both_wrong": 15
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "dataset": "ComplexOR",
+      "shot_condition": "few_shot",
+      "comparison": "formulation_code minus code",
+      "both_correct": 9,
+      "left_only": 3,
+      "right_only": 2,
+      "both_wrong": 4
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "dataset": "LogiOR",
+      "shot_condition": "zero_shot",
+      "comparison": "formulation_code minus code",
+      "both_correct": 0,
+      "left_only": 0,
+      "right_only": 3,
+      "both_wrong": 89
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "dataset": "LogiOR",
+      "shot_condition": "few_shot",
+      "comparison": "formulation_code minus code",
+      "both_correct": 14,
+      "left_only": 7,
+      "right_only": 7,
+      "both_wrong": 64
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "dataset": "IndustryOR",
+      "shot_condition": "zero_shot",
+      "comparison": "formulation_code minus code",
+      "both_correct": 0,
+      "left_only": 0,
+      "right_only": 2,
+      "both_wrong": 80
+    },
+    {
+      "model": "ibm/granite4.2:8b",
+      "dataset": "IndustryOR",
+      "shot_condition": "few_shot",
+      "comparison": "formulation_code minus code",
+      "both_correct": 17,
+      "left_only": 2,
+      "right_only": 17,
+      "both_wrong": 46
+    }
+  ]
+}

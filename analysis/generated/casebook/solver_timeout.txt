@@ -1,0 +1,56 @@
+CASE solver_timeout
+run_id: 20260917T173527918515Z
+phase: P1, repetition: 1
+model: gpt-oss:20b, dataset: LogiOR, example_id: prob_012
+pipeline: code, shot_condition: zero_shot
+terminal_outcome: timeout
+expected_objective: 51.78290154932
+predicted_objective: None
+EXCERPTS: [...] marks omitted material. Non-ASCII uses escape sequences, and trailing spaces are trimmed.
+[code_generation]
+reasoning_field: [...]ure that each route's load is consistent. Already set.
+
+Ok.
+
+Now we need to solve.
+
+We need to call model.optimize().
+
+We need to check status.
+
+We need to print objective if optimal.
+
+We need to ensure we don't print anything else.
+
+We need to ensure we don't use any other prints.
+
+We need to ensure we don't use any other prints.
+
+Ok.
+
+Now we need to produce final code.
+
+We ne[...]
+response: [...]      model.addConstr(u[j] >= u[i] + demands[j] - Q*(1 - x[i][j]), name=f"cap_{i}_{j}")
+
+# Optimize
+model.optimize()
+
+# Output
+if model.status == GRB.OPTIMAL:
+    print(f"FINAL_OBJECTIVE={model.objVal}")
+```
+done_reason: stop
+eval_count: 4751
+[execution]
+outcome: timeout
+stdout: 498   46.19818  8.24%  18.9   75s
+ 575378 140631     cutoff   52        50.34498   46.28361  8.07%  19.1   80s
+ 603773 143392 infeasible   52        50.34498   46.37224  7.89%  19.2   85s
+ 622454 144950   47.36167   49   41   50.34498   46.42552  7.79%  19.3   90s
+ 649567 146823   49.57326   48   19   50.34498   46.50708  7.62%  19.4   95s
+ 676386 148464   49.28196   55   34   50.34498   46.58002  7.48%  19.4  100s
+ 703814 150165   47.55190   53   28   50.34498   46.65267  7.33%  19.5  105s
+ 731227 151413     cutoff   49        50.34498   46.72022  7.20%  19.6  110s
+ 759350 152669   49.15004   49   22   50.34498   46.79107  7.06%  19.7  115s
+stderr: Code execution exceeded 120 seconds.

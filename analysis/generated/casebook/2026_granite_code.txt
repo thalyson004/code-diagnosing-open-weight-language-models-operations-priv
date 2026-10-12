@@ -1,0 +1,70 @@
+CASE 2026_granite_code
+run_id: 20260917T173527918515Z
+phase: P1, repetition: 1
+model: ibm/granite4.2:8b, dataset: ComplexOR, example_id: prod_7
+pipeline: code, shot_condition: zero_shot
+terminal_outcome: correct
+expected_objective: 55.66666666666667
+predicted_objective: 55.66666666666667
+EXCERPTS: [...] marks omitted material. Non-ASCII uses escape sequences, and trailing spaces are trimmed.
+[code_generation]
+reasoning_field: We need to parse the problem and produce a Python program using gurobipy that solves it. The problem description:
+
+- Set P (implicitly indices 0..2 given parameters lists). For each j in P we have parameters a[j], c[j], u[j] and global b.
+
+- Variable X[j] for each j in P.
+
+- Goal maximize total profit sum(c[j] * X[j]).
+
+- Constraints:
+
+  - sum_{j} (1 / a[j]) * X[j] <= b
+
+  - 0 [...]
+response: ```python
+import gurobipy as gp
+from gurobipy import GRB
+
+def main():
+    a = [3, 1, 2]
+    c = [5, 10, 8]
+    u = [4, 6, 3]
+    b = 4
+
+    env = None
+    m = gp.Model(env=env)
+
+    X = {}
+    for j in range(len(a)):
+        X[j] = m.addVar(lb=0, ub=u[j], name=f"X{j}")
+
+    obj_expr = gp.quicksum([c[j] * X[j] for j in range(len(a))])
+    m.setObjective(obj_expr, GRB.MAXIMIZE)
+
+    m.addConstr(gp.quicksum([(1 / a[j]) * X[j] for j in range(len(a))]) <= b, name="capacity")
+
+    [...]
+done_reason: stop
+eval_count: 6213
+[execution]
+outcome: executed
+stdout:
+
+Optimize a model with 1 rows, 3 columns and 3 nonzeros (Max)
+Model fingerprint: 0xd1c14c05
+Model has 3 linear objective coefficients
+Coefficient statistics:
+  Matrix range     [3e-01, 1e+00]
+  Objective range  [5e+00, 1e+01]
+  Bounds range     [3e+00, 6e+00]
+  RHS range        [4e+00, 4e+00]
+
+Presolve removed 1 rows and 3 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    5.5666667e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  5.566666667e+01
+FINAL_OBJECTIVE=55.66666666666667

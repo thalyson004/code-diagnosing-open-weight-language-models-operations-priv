@@ -1,0 +1,17 @@
+CASE thinking_without_answer
+run_id: 20260917T173527918515Z
+phase: P1, repetition: 1
+model: qwen3:14b, dataset: ComplexOR, example_id: netasgn_0
+pipeline: formulation_code, shot_condition: zero_shot
+terminal_outcome: empty_response
+expected_objective: 285.0
+predicted_objective: None
+EXCERPTS: [...] marks omitted material. Non-ASCII uses escape sequences, and trailing spaces are trimmed.
+[code_from_formulation]
+reasoning_field: Okay, let's tackle this problem. The user wants a Python program using gurobipy to solve the given project assignment problem. Let me start by understanding the original problem and the supplied formulation.
+
+First, the problem involves assigning people to projects with certain constraints. The parameters provided are supply, demand, cost, and limit. The decision variable is X_[...]
+response: <empty>
+error_type: empty_response
+done_reason: length
+eval_count: 8192

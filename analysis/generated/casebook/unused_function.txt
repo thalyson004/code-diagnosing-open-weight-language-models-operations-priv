@@ -1,0 +1,52 @@
+CASE unused_function
+run_id: 20260917T173527918515Z
+phase: P1, repetition: 1
+model: qwen3:14b, dataset: ComplexOR, example_id: flowshop_scheduling_1
+pipeline: code, shot_condition: zero_shot
+terminal_outcome: output_contract_error
+expected_objective: 7.0
+predicted_objective: None
+EXCERPTS: [...] marks omitted material. Non-ASCII uses escape sequences, and trailing spaces are trimmed.
+[code_generation]
+reasoning_field: [...]he code can ignore that parameter.
+
+Now, the code:
+
+import gurobipy as gp
+from gurobipy import GRB
+
+def solve(env):
+    # Parameters
+    jobs = [1, 2, 3]
+    machines = [1, 2]
+    proces_time = [[1, 3], [2, 2], [3, 1]]
+
+    model = gp.Model("makespan_minimization", env=env)
+
+    # Decision variables
+    start_time = model.addVars(len(jobs), len(machines), name="start_ti[...]
+response: ```python
+import gurobipy as gp
+from gurobipy import GRB
+
+def solve(env):
+    # Parameters
+    jobs = [1, 2, 3]
+    machines = [1, 2]
+    proces_time = [[1, 3], [2, 2], [3, 1]]
+
+    model = gp.Model("makespan_minimization", env=env)
+
+    # Decision variables
+    start_time = model.addVars(len(jobs), len(machines), name="start_time")
+    makespan = model.addVar(name="makespan")
+
+    # Objective
+    model.setObjective(makespan, GRB.MINIMIZE)
+
+    # Constraints
+ [...]
+done_reason: stop
+eval_count: 4246
+[execution]
+outcome: output_contract_error

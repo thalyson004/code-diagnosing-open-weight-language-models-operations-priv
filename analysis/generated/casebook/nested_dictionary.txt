@@ -1,0 +1,50 @@
+CASE nested_dictionary
+run_id: 20260917T173527918515Z
+phase: P1, repetition: 1
+model: deepseek-r1:14b, dataset: ComplexOR, example_id: netasgn_0
+pipeline: code, shot_condition: zero_shot
+terminal_outcome: runtime_error
+expected_objective: 285.0
+predicted_objective: None
+EXCERPTS: [...] marks omitted material. Non-ASCII uses escape sequences, and trailing spaces are trimmed.
+[code_generation]
+reasoning_field: [...] constraints:
+1. For each person i, the total hours assigned must equal their supply: sum over j of x[i][j] = supply[i].
+2. For each project j, the total hours assigned must equal their demand: sum over i of x[i][j] = demand[j].
+3. The hours assigned from person i to project j cannot exceed the limit: x[i][j] <= limit[i][j].
+
+I'll structure the Gurobi model accordingly. I'll cr[...]
+response: [...]el = gp.Model(env=env)
+
+# Decision variables
+x = {}
+for i in People:
+    for j in Projects:
+        x[i][j] = model.addVar(
+            lb=0,
+            ub=limit[i][j],
+            name=f"x_{i}_{j}"
+        )
+
+# Objective function
+obj = gp.LinExpr()
+for i in People:
+    for j in Projects:
+        obj.add_term(cost[i][j], x[i][j])
+model.setObjective(obj, GRB.MINIMIZE)
+
+# Constraints
+# Supply constraints
+for i in People:
+    cons = gp.LinExpr()
+    for j in Projects:
+        c[...]
+done_reason: stop
+eval_count: 5273
+[execution]
+outcome: runtime_error
+stdout: Restricted license - for non-production use only - expires 2027-11-29
+stderr:     ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    x[i][j] = model.addVar(
+    ~^^^
+KeyError: 0

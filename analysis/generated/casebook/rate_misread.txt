@@ -1,0 +1,53 @@
+CASE rate_misread
+run_id: 20260917T173527918515Z
+phase: P1, repetition: 1
+model: gpt-oss:20b, dataset: ComplexOR, example_id: steel4_12
+pipeline: formulation_code, shot_condition: zero_shot
+terminal_outcome: incorrect_objective
+expected_objective: 130.0
+predicted_objective: 60.0
+EXCERPTS: [...] marks omitted material. Non-ASCII uses escape sequences, and trailing spaces are trimmed.
+[formulation]
+reasoning_field: [...]mit <= x_p <= market. Could be continuous.
+
+Objective: maximize sum_p Profit_p * x_p.
+
+Constraints: For each s: sum_p Rate_{p,s} * x_p <= Available_s. Also commit <= x_p <= market.
+
+Requested reported quantity: likely the optimal production plan: x_p values. But the problem says "How to decide the number of tons to be produced for each product p?" So requested reported quantity[...]
+response: [...]\u2208\u202fProducts
+
+Objective and direction
+Maximize\u2003Z\u202f=\u202f\u2211_{p\u2208Products} Profit_p\u202f\xb7\u202fx_p
+
+Constraints
+For each s\u202f\u2208\u202fStages:\u2003\u2211_{p\u2208Products} Rate_{p,s}\u202f\xb7\u202fx_p\u202f\u2264\u202fAvailable_s
+For each p\u202f\u2208\u202fProducts:\u2003Commit_p\u202f\u2264\u202fx_p\u202f\u2264\u202fMarket_p
+
+Requested reported quantity
+The optimal production quantities x_p for each product p.
+done_reason: stop
+eval_count: 1946
+[code_from_formulation]
+reasoning_field: We need to produce a Python program using gurobipy. Must read formulation literally. We have sets, parameters, variables, objective, constraints. We need to output program. Also requested reported quantity: "The optimal production quantities x_p for each product p." But output contract says: "Return only one Python program, optionally inside one python code fence. If and only i[...]
+response: [...]
+model.setObjective(gp.quicksum(profit[i] * x[p] for i, p in enumerate(products)), GRB.MAXIMIZE)
+
+# Stage capacity constraints
+for s_idx, s in enumerate(stages):
+    model.addConstr(
+        gp.quicksum(rate[p_idx][s_idx] * x[p] for p_idx, p in enumerate(products)) <= avail[s_idx],
+        name=f'Cap_{s}'
+    )
+
+# Optimize
+model.optimize()
+
+# Print the optimal objective value
+print(f"FINAL_OBJECTIVE={model.ObjVal}")
+```
+done_reason: stop
+eval_count: 1358
+[execution]
+outcome: executed
+stdout: FINAL_OBJECTIVE=60.0
